@@ -41,6 +41,7 @@ For more information or to receive a quote, please `visit us online <http://clea
     :caption: Demo Applications: Manipulation
 
     HuskyManip.rst
+    HuskyDualManip.rst
 
 .. toctree::
     :maxdepth: 0

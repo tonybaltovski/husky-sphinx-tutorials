@@ -1,0 +1,168 @@
+Husky Dual UR5 Mobile Manipulation Demo (Simulation) 
+=================================================   
+
+Introduction
+----------------
+
+.. Note:: This tutorial assumes you have ROS Indigo installed, Gazebo, RViz, and a computer that is strong enough to handle simulations and inverse kinematics. If you wish to work with the real Clearpath Robotics Dual UR5 Husky, please see www.clearpathrobotics.com.
+
+.. image:: huskydualimgs/DualScaled.jpg
+
+The DUAL UR5 Husky is a combination of the best. It is a rugged, outdoor-ready unmanned ground vehicle. It is a precision planning, fast acting dual armed platform. And it comes with a robust, precise, multi-finger grasping solution. On two arms. Clearpath Robotics supports ROS, and all of the ROS packages are available at The Dual UR5 Husky Github Repo.
+
+Installation
+-------------------
+
+On a real platform purchased from Clearpath Robotics AND in Simulation
+
+If you have the Dual UR5 integration setup from Clearpath Robotics, you may perform a re-installation or an installation on your own robot using this setup below. If you did not directly purchase this originally from Clearpath, but are putting it together on your own, we cannot freely support that at this time. 
+Note, this setup installs both the sim and real code needed, only thing that changes is how the code is launched.
+
+All of the necessary code to make this robot work can be found at https://github.com/DualUR5Husky
+
+.. code:: bash
+
+        mkdir -p ~/dual_ws/src
+        cd ~/dual_ws/src && catkin_init_workspace
+        git clone https://github.com/DualUR5Husky/husky
+        git clone https://github.com/DualUR5Husky/ur_modern_driver
+        git clone https://github.com/DualUR5Husky/universal_robot
+        git clone https://github.com/DualUR5Husky/robotiq
+        git clone https://github.com/DualUR5Husky/pointgrey_camera_driver
+        git clone https://github.com/DualUR5Husky/husky_simulator
+        git clone https://github.com/DualUR5Husky/flir_ptu
+        cd ..
+
+.. code:: bash
+
+        source /opt/ros/indigo/setup.bash
+        catkin_make install
+
+.. code:: bash
+	
+        ~/.bashrc << "source ~/dual_ws/devel/setup.bash"
+
+If there are outstanding dependencies, please use rosdep or apt-get to resolve them.
+
+Usage:
+---------------------------------
+
+Husky can be used in both real and simulated environments. The Dual UR5 operation is simpler than before. With the new separation into its own organization, users will no longer have to worry about parameters, configurations, etc. Follow the steps below to bring up the robot's simulation environment. Following that, there will be instructions on how to move every single part of your new robot!
+
+
+.. code:: bash
+
+	roslaunch husky_gazebo husky_empty_world.launch
+
+The terminal screen should report no errors and look like this:
+
+.. image:: huskydualimgs/Selection_191.png
+
+Gazebo should pop up now. The arms will go through some movement behaviours to rest them back at their home position, and then the robot should look like this:
+
+.. image:: huskydualimgs/Selection_192.png
+
+Now, you're going to want to play around with the arms. To launch the interactive interface within Rviz:
+
+.. code:: bash
+
+        roslaunch husky_dual_ur5_moveit_config demo.launch
+
+and the Rviz screen will appear:
+
+.. image:: huskydualimgs/Selection_193.png
+
+This rviz configuration by default, has three views setup. The top most view is the camera feed coming from the bumblebee w.r.t the robots frame. The bottom left view is the MoveIt planning plugin pipeline. And the one in the bottom right is the visualization of the robot state, and moveit's robot state. Note the orbs around the arm. Dragging these around will allow you to position the arm any way you want.
+
+Try dragging the arm around:
+
+.. image:: huskydualimgs/Selection_194.png
+
+To get the arm to finally plan and execute its position in Gazebo, use the motion planning plugin:
+
+.. image:: huskydualimgs/Selection_195.png
+
+The arm should be fully extended in Gazebo (or to wherever you specified to move it)
+
+.. image:: huskydualimgs/Selection_196.png
+
+To move the other arm, open up the planning window to change the "Planning Request" name. Go to Rviz's top menu bar and find "Panels" and then select "Displays" which will open another window in the Rviz screen:
+
+.. image:: huskydualimgs/Selection_197.png
+
+Click on "MotionPlanning" and expand it down and find the "Planning Request" drop down. Change it to "left_arm" and notice the orb moves to the left arm so you can position that.
+
+.. image:: huskydualimgs/Selection_198.png
+
+Clicking "plan and execute" also works once you move it, you will see it move in Gazebo. Note sometimes it *may* fail, you will just have to plan and execute again if it doesn't find a path the first time.
+
+The final position of the arms in Gazebo after execution:
+
+.. image:: huskydualimgs/Selection_199.png
+
+Controlling The Grippers
+---------------------------------------------------------
+
+The grippers are controlled (from an end user perspective), by a neat little script made by Robotiq. Run this command to bring up the gripper controller. Change topic:= to either /left_hand/ or /right_hand/ depending on which gripper you want to move.
+
+.. code:: bash
+
+       rosrun robotiq_s_model_control SModelSimpleController.py _topic:=/left_hand/command
+
+An interactive command line should come up:
+
+.. image:: huskydualimgs/Selection_200.png
+
+typing "a" will activate it, and then "o" will open it. It should look like this:
+
+.. image:: huskydualimgs/Selection_201.png
+
+typing "p" will pinch it close like so
+
+.. image:: huskydualimgs/Selection_202.png
+
+Navigation And Mapping with the Dual UR5 Husky
+--------------------------------------------------
+
+Start the husky gazebo from scratch using the playpen so there will be objects:
+
+.. code:: bash
+
+         roslaunch husky_gazebo husky_playpen.launch
+
+Bring up the mapping demo:
+
+.. code:: bash
+
+         roslaunch husky_navigation gmapping_demo.launch
+
+Bring up the visualization for it:
+
+.. code:: bash
+
+         roslaunch husky_viz view_robot.launch
+
+Now, you will be able to map, navigate, and control the robot. Use the interactive markers to drive it around. Please see these pictures for instructions:
+
+Spawning in playpen:
+
+.. image:: huskydualimgs/Selection_204.png
+
+When the robot viz starts, make sure you turn navigation on by clicking in the display window, should look like this:
+
+.. image:: huskydualimgs/Selection_205.png
+
+Move it around and it will build its map (using the interactive markers)
+
+.. image:: huskydualimgs/Selection_206.png
+
+If you select "2DNav Point" and put it somewhere on the map, it will drive there like so and you will see a path it runs
+
+.. image:: huskydualimgs/Selection_207.png
+
+Additional links about this robot:
+https://www.youtube.com/watch?v=vymJBbnz6bQ - A demonstration by Clearpath Robotics
+http://www.bbc.com/news/uk-scotland-39330441 - Featured by BBC UK article
+
+
+
