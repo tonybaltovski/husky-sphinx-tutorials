@@ -43,6 +43,12 @@ All of the packages used in this demo can be found at https://github.com/DualUR5
 
 If there are outstanding dependencies, please use rosdep or apt-get to resolve them.
 
+.. code:: bash
+
+        sudo apt-get update
+
+        rosdep install --from-paths src --ignore-src --rosdistro=indigo -y
+
 Usage:
 ---------------------------------
 
