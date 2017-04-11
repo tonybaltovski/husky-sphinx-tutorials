@@ -17,7 +17,7 @@ On a real platform purchased from Clearpath Robotics AND in Simulation
 
 If you have the Dual UR5 integration setup from Clearpath Robotics, you may use this tutorial to revert your Husky's workspace back to a working state. This tutorial can also be used to run the simulator of this platform without purchase.
 
-All of the necessary code to make this robot work can be found at https://github.com/DualUR5Husky
+All of the packages used in this demo can be found at https://github.com/DualUR5Husky
 
 .. code:: bash
 
