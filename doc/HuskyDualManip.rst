@@ -15,8 +15,7 @@ Installation
 
 On a real platform purchased from Clearpath Robotics AND in Simulation
 
-If you have the Dual UR5 integration setup from Clearpath Robotics, you may perform a re-installation or an installation on your own robot using this setup below. If you did not directly purchase this originally from Clearpath, but are putting it together on your own, we cannot freely support that at this time. 
-Note, this setup installs both the sim and real code needed, only thing that changes is how the code is launched.
+If you have the Dual UR5 integration setup from Clearpath Robotics, you may use this tutorial to revert your Husky's workspace back to a working state. This tutorial can also be used to run the simulator of this platform without purchase.
 
 All of the necessary code to make this robot work can be found at https://github.com/DualUR5Husky
 
