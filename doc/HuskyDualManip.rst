@@ -17,6 +17,7 @@ On a real platform purchased from Clearpath Robotics AND in Simulation
 
 If you have the Dual UR5 integration setup from Clearpath Robotics, you may use this tutorial to revert your Husky's workspace back to a working state. This tutorial can also be used to run the simulator of this platform without purchase.
 
+
 All of the packages used in this demo can be found at https://github.com/DualUR5Husky
 
 .. code:: bash
@@ -76,7 +77,7 @@ and the Rviz screen will appear:
 
 .. image:: huskydualimgs/Selection_193.png
 
-This rviz configuration by default, has three views setup. The top most view is the camera feed coming from the bumblebee w.r.t the robots frame. The bottom left view is the MoveIt planning plugin pipeline. And the one in the bottom right is the visualization of the robot state, and moveit's robot state. Note the orbs around the arm. Dragging these around will allow you to position the arm any way you want.
+This custom rviz configuration has three views by default. The top most view is the camera feed coming from the bumblebee with respect to the robots frame. The bottom left view is the MoveIt! planning plugin pipeline. The one in the bottom right is the visualization of the robot state. Dragging the orbs around the arm will allow you to position the arm any way you want.
 
 Try dragging the arm around:
 
