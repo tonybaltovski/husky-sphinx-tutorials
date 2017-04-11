@@ -8,7 +8,7 @@ Introduction
 
 .. image:: huskydualimgs/DualScaled.jpg
 
-The DUAL UR5 Husky is a combination of the best. It is a rugged, outdoor-ready unmanned ground vehicle. It is a precision planning, fast acting dual armed platform. And it comes with a robust, precise, multi-finger grasping solution. On two arms. Clearpath Robotics supports ROS, and all of the ROS packages are available at The Dual UR5 Husky Github Repo.
+The Husky dual UR5 is an out of the box solution to dual arm mobile manipulation! It comes installed with all associated ROS drivers, as well as a MoveIT! configuration for both arms. We're also able to add whatever sensors you may require for your research needs!
 
 Installation
 -------------------
