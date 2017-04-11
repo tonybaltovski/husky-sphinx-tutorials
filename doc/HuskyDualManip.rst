@@ -52,8 +52,7 @@ If there are outstanding dependencies, please use rosdep or apt-get to resolve t
 Usage:
 ---------------------------------
 
-Husky can be used in both real and simulated environments. The Dual UR5 operation is simpler than before. With the new separation into its own organization, users will no longer have to worry about parameters, configurations, etc. Follow the steps below to bring up the robot's simulation environment. Following that, there will be instructions on how to move every single part of your new robot!
-
+The dual UR5 Husky is easy to start working with! All the packages you'll need are conveniently located in one place, and there's no need to worry about setting parameters or customer configuration. Just follow the steps below to bring up the robot's simulation environment, afterwards, we'll get into how to move your new robot!
 
 .. code:: bash
 
