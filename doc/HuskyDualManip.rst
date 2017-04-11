@@ -153,7 +153,7 @@ Spawning in playpen:
 
 .. image:: huskydualimgs/Selection_204.png
 
-When the robot viz starts, make sure you turn navigation on by clicking in the display window, should look like this:
+When the Rviz starts, make sure you turn navigation on by clicking in the display window, should look like this:
 
 .. image:: huskydualimgs/Selection_205.png
 
