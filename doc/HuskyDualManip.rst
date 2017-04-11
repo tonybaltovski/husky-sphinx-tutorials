@@ -67,7 +67,7 @@ Gazebo should pop up now. The arms will go through some movement behaviours to r
 
 .. image:: huskydualimgs/Selection_192.png
 
-Now, you're going to want to play around with the arms. To launch the interactive interface within Rviz:
+To launch the interact with the robot within Rviz:
 
 .. code:: bash
 
