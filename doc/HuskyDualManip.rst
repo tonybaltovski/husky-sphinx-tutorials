@@ -161,7 +161,7 @@ Move it around and it will build its map (using the interactive markers)
 
 .. image:: huskydualimgs/Selection_206.png
 
-If you select "2DNav Point" and put it somewhere on the map, it will drive there like so and you will see a path it runs
+Use 2D Nav Goal to select points on the map for your Husky to navigate to!
 
 .. image:: huskydualimgs/Selection_207.png
 
