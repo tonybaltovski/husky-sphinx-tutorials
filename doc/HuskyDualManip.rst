@@ -165,7 +165,7 @@ Use 2D Nav Goal to select points on the map for your Husky to navigate to!
 
 .. image:: huskydualimgs/Selection_207.png
 
-Additional links about this robot:
+Related links
 https://www.youtube.com/watch?v=vymJBbnz6bQ - A demonstration by Clearpath Robotics
 http://www.bbc.com/news/uk-scotland-39330441 - Featured by BBC UK article
 
