@@ -28,9 +28,7 @@ All of the packages used in this demo can be found at https://github.com/DualUR5
         git clone https://github.com/DualUR5Husky/ur_modern_driver
         git clone https://github.com/DualUR5Husky/universal_robot
         git clone https://github.com/DualUR5Husky/robotiq
-        git clone https://github.com/DualUR5Husky/pointgrey_camera_driver
         git clone https://github.com/DualUR5Husky/husky_simulator
-        git clone https://github.com/DualUR5Husky/flir_ptu
         cd ..
 
 .. code:: bash
