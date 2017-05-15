@@ -35,6 +35,10 @@ All of the packages used in this demo can be found at https://github.com/DualUR5
 
         source /opt/ros/indigo/setup.bash
         catkin_make install
+        
+        Note before using the code, switch the robotiq branch back to jade-devel
+        
+        roscd robotiq && git checkout jade-devel
 
 .. code:: bash
 	
