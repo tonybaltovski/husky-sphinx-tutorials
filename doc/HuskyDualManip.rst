@@ -1,10 +1,10 @@
-Husky Dual UR5 Mobile Manipulation Demo (Simulation) 
-=================================================   
+Husky Dual UR5 Mobile Manipulation Demo (Simulation)
+=================================================
 
 Introduction
 ----------------
 
-.. Note:: This tutorial assumes you have ROS Indigo installed, Gazebo, RViz, and a computer that is strong enough to handle simulations and inverse kinematics. If you wish to work with the real Clearpath Robotics Dual UR5 Husky, please see www.clearpathrobotics.com.
+.. Note:: This tutorial assumes you have ROS Indigo installed, Gazebo, RViz, and a computer that is able to  handle simulations and inverse kinematics. If you wish to work with the real Clearpath Robotics Dual UR5 Husky, please see www.clearpathrobotics.com.
 
 .. image:: huskydualimgs/DualScaled.jpg
 
@@ -31,26 +31,22 @@ All of the packages used in this demo can be found at https://github.com/DualUR5
         git clone https://github.com/DualUR5Husky/husky_simulator
         cd ..
 
-.. code:: bash
-
-        source /opt/ros/indigo/setup.bash
-        catkin_make install
-        
-        Note before using the code, switch the robotiq branch back to jade-devel
-        
-        roscd robotiq && git checkout jade-devel
-
-.. code:: bash
-	
-        ~/.bashrc << "source ~/dual_ws/devel/setup.bash"
-
-If there are outstanding dependencies, please use rosdep or apt-get to resolve them.
+If there are outstanding dependencies, you may install them using
 
 .. code:: bash
 
         sudo apt-get update
 
         rosdep install --from-paths src --ignore-src --rosdistro=indigo -y
+
+Finally build your workspace using
+
+.. code:: bash
+
+        catkin_make install
+        source ~/dual_ws/devel/setup.bash
+
+
 
 Usage:
 ---------------------------------
@@ -69,10 +65,11 @@ Gazebo should pop up now. The arms will go through some movement behaviours to r
 
 .. image:: huskydualimgs/Selection_192.png
 
-To launch the interact with the robot within Rviz:
+To launch the interact with the robot within Rviz, open a new terminal, source your workspace once again, and laucnh the moveit interface:
 
 .. code:: bash
 
+        source ~/dual_ws/devel/setup.bash
         roslaunch husky_dual_ur5_moveit_config demo.launch
 
 and the Rviz screen will appear:
@@ -170,6 +167,3 @@ Use 2D Nav Goal to select points on the map for your Husky to navigate to!
 Related links
 https://www.youtube.com/watch?v=vymJBbnz6bQ - A demonstration by Clearpath Robotics
 http://www.bbc.com/news/uk-scotland-39330441 - Featured by BBC UK article
-
-
-
