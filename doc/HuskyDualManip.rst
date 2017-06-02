@@ -29,6 +29,7 @@ All of the packages used in this demo can be found at https://github.com/DualUR5
         git clone https://github.com/DualUR5Husky/universal_robot
         git clone https://github.com/DualUR5Husky/robotiq
         git clone https://github.com/DualUR5Husky/husky_simulator
+        git clone https://github.com/DualUr5Husky/flir_ptu
         cd ..
 
 If there are outstanding dependencies, you may install them using
@@ -85,6 +86,9 @@ Try dragging the arm around:
 To get the arm to finally plan and execute its position in Gazebo, use the motion planning plugin:
 
 .. image:: huskydualimgs/Selection_195.png
+
+DISCLAIMER: If you experience problems planning. Check the "Status" tab of the MoveIt! plugin in RViz. If there are any detected collisions, you will have to disable them inside the config/husky.srdf file. If you copy
+and paste the text from the status output and put it inside a text file, you can generate some xml using the generate_collisions.py script. Otherwise, read the husky.srdf and find the disable_collision tags, it will be pretty straightforward what to add.
 
 The arm should be fully extended in Gazebo (or to wherever you specified to move it)
 
