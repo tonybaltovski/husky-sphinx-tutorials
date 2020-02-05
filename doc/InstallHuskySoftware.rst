@@ -1,5 +1,5 @@
 Install and Configure Husky Software
-=======================================  
+=======================================
 
 Installing Husky Software
 ---------------------------
@@ -7,13 +7,13 @@ Installing Husky Software
 Clearpath provides a lightly customized installation image of Ubuntu Trusty Server 14.04, that automatically pulls in all necessary dependencies for Husky software.
 
 
-1.  Download the appropriate `Indigo Husky ISO image <http://packages.clearpathrobotics.com/stable/images/latest/indigo-husky/>`_ for your platform (32 bit - i386, 64 bit - amd64).
+1.  Download the appropriate `Kinetic Husky ISO image <https://packages.clearpathrobotics.com/stable/images/latest/kinetic-husky/>`_ for your platform (32 bit - i386, 64 bit - amd64).
 
 2. Copy the image to a USB drive using unetbootin:
 
-.. code:: bash 
+.. code:: bash
 
-	 $ sudo unetbootin isofile="indigo-husky-amd64-latest.iso"
+	 $ sudo unetbootin isofile="kinetic-husky-amd64-latest.iso"
 
 3.  Connect your robot PC to wired internet access, a keyboard, and a monitor. Make sure that the PC is connected to shore power, or the Husky battery is either fully charged.
 
@@ -31,7 +31,7 @@ Clearpath provides a lightly customized installation image of Ubuntu Trusty Serv
 
 	 $ rosrun husky_bringup install
 
-The install script will configure a husky-core upstart service, that will bring up the base Husky launchfiles on boot. The script will also detect any standard peripherals (IMU, GPS, etc.) you have installed, and add them the service.
+The install script will configure a ros upstart service, that will bring up the base Husky launchfiles on boot. The script will also detect any standard peripherals (IMU, GPS, etc.) you have installed, and add them the service.
 
 Testing base configuration
 ----------------------------
@@ -40,13 +40,13 @@ Testing base configuration
 
 .. code:: bash
 
-	 $ sudo service husky-core start
+	 $ sudo systemctl start ros
 
 2.  The COMM light on your Husky should go from red to green. You can check that the service has started correctly by checking the logs:
- 
+
 .. code:: bash
 
-	 $ sudo tail /var/log/upstart/husky-core.log -n 30
+	 $ sudo tail /var/log/upstart/ros.log -n 30
 
 3.  Your husky should now be accepting commands from your joystick. The service will automatically start each time you boot your Husky's PC.
 
@@ -58,7 +58,7 @@ Calibrating the Magnetometer
 
 If your Husky has a UM6 IMU installed, you must calibrate the magnetometer for magnetic deviation before it will be used for pose estimation.
 
-1.  Make sure the husky-core service is running.
+1.  Make sure the ros service is running.
 2.  Execute the calibration script on the Husky computer remotely via ssh:
 
 .. code:: bash
