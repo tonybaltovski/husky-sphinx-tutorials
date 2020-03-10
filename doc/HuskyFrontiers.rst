@@ -13,7 +13,7 @@ Instructions
 
 .. code:: bash
 
-	$ sudo apt-get install ros-kinetic-husky-navigation
+	$ sudo apt-get install ros-melodic-husky-navigation
 
 2.  In three separate terminal windows:
 

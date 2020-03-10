@@ -5,7 +5,7 @@ Both simulated and real Husky robots expose the same ROS interface, and can be i
 
 .. code:: bash
 
-	$ sudo apt-get install ros-kinetic-husky-desktop
+	$ sudo apt-get install ros-melodic-husky-desktop
 
 Visualization
 --------------
@@ -68,7 +68,7 @@ These channels are (in order of decreasing priotity):
 	  </tbody>
 	</table>
 
-Additional velocity channels can be defined in `twist_mux\.yaml <https://github.com/husky/husky/blob/kinetic-devel/husky_control/config/twist_mux.yaml>`_, or can be piped into the lowest-priority cmd_vel topic.
+Additional velocity channels can be defined in `twist_mux\.yaml <https://github.com/husky/husky/blob/melodic-devel/husky_control/config/twist_mux.yaml>`_, or can be piped into the lowest-priority cmd_vel topic.
 
 Odometry
 ---------
@@ -108,7 +108,7 @@ Husky publishes odometry information on the odometry/filtered topic, as `nav_msg
 	</table>
 	</div>
 
-Additional odometry information sources can be added to the EKF in `localization\.yaml <https://github.com/husky/husky/blob/kinetic-devel/husky_control/config/twist_mux.yaml>`_.
+Additional odometry information sources can be added to the EKF in `localization\.yaml <https://github.com/husky/husky/blob/melodic-devel/husky_control/config/twist_mux.yaml>`_.
 
 Diagnostics
 ------------

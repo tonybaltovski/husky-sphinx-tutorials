@@ -79,29 +79,29 @@ Configuring non-standard peripherals requires a source workspace on the robot PC
 
 .. code:: bash
 
-	 $ mkdir -p ~/husky_kinetic_ws/src
+	 $ mkdir -p ~/husky_melodic_ws/src
 
-2.  Add any custom source packages to the ~/husky_kinetic_ws/src directory.
+2.  Add any custom source packages to the ~/husky_melodic_ws/src directory.
 
 3.  After adding your packages, make sure any necessary dependencies are installed:
 
 .. code:: bash
 
- 	$ cd ~/husky_kinetic_ws/
-	$ rosdep install --from-paths src --ignore-src --rosdistro kinetic -y
+ 	$ cd ~/husky_melodic_ws/
+	$ rosdep install --from-paths src --ignore-src --rosdistro melodic -y
 
 4.  Build the workspace:
 
 .. code:: bash
 
- 	$ cd ~/husky_kinetic_ws/
+ 	$ cd ~/husky_melodic_ws/
 	$ catkin_make
 
-5.  Modify your robot-wide setup file (/etc/ros/setup.bash) to source your new workspace instead of the base kinetic 		install:
+5.  Modify your robot-wide setup file (/etc/ros/setup.bash) to source your new workspace instead of the base melodic 		install:
 
 .. code:: bash
 
- 	source /home/administrator/husky_kinetic_ws/devel/setup.bash
+ 	source /home/administrator/husky_melodic_ws/devel/setup.bash
 
 6.  Reinitialize your environment so that it picks up your new workspace:
 
