@@ -124,10 +124,10 @@ but some older models may ship with a Logitech F710 controller.
 .. note::
 
     The Logitech F710 controller uses a USB dongle for pairing.  The robot should connect automatically to the
-    controler when the dongle is inserted into a USB port and the controller is powered on.
+    controller when the dongle is inserted into a USB port and the controller is powered on.
 
 To pair the PS4 controller with the robot, run the ``bluetoothctl`` command on the robot, put the controller in pairing
-mode by pressing and holding the Share and PS buttons, and enter the follwing sub-commands:
+mode by pressing and holding the Share and PS buttons, and enter the following sub-commands:
 
 .. code-block:: text
 
@@ -156,7 +156,7 @@ button enables turbo speed.
 
 .. warning::
 
-	When familiarizing yourself with Huksy's operation, always hold the left button (L1/LB).  Once you are comfortable
+	When familiarizing yourself with Husky's operation, always hold the left button (L1/LB).  Once you are comfortable
 	with how Husky operates, and you are in a large area with plenty of open room, then you can use R1/RB to enable
 	turbo mode.
 
