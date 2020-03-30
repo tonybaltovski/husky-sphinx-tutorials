@@ -97,3 +97,68 @@ This will bring up something similar to the following image.
 
 Here we can see that all four wheel are referenced to the **base_link**. We also see that the **odom topic** is driving the reference of the whole robot.
 This means that if you write to the **odom topic** (IE, when you publish to the **/cmd_vel topic**) then the whole robot will move.
+
+
+Operating a Physical Husky
+===================================
+
+Husky can either drive autonomously, be :doc:`controlled through ROS messages <Huskysim>`, or you
+can use the supplied remote control to teleoperate it.
+
+Safety Precautions
+----------------------
+
+.. warning::
+
+    Husky is a heavy, robot capable of reaching high speeds.  Careless driving can cause harm to the operator,
+    bystanders, the robot, or other property.  Always remain vigilant, ensure you have a clear line of sight to the
+    robot, and operate the robot at safe speeds.
+
+
+Controller Pairing
+----------------------
+
+Husky ships with a standard game controller of varying models.  On newer robots this is a Sony Playstation 4 controller,
+but some older models may ship with a Logitech F710 controller.
+
+.. note::
+
+    The Logitech F710 controller uses a USB dongle for pairing.  The robot should connect automatically to the
+    controler when the dongle is inserted into a USB port and the controller is powered on.
+
+To pair the PS4 controller with the robot, run the ``bluetoothctl`` command on the robot, put the controller in pairing
+mode by pressing and holding the Share and PS buttons, and enter the follwing sub-commands:
+
+.. code-block:: text
+
+	agent on
+	scan on
+
+The bluetooth scan will display the MAC addresses to nearby devices.  Determine with MAC address corresponds to the
+controller and copy it.  Then run the following commands in bluetoothctl:
+
+.. code-block:: text
+
+	scan off
+	pair <MAC Address>
+	trust <MAC Address>
+	connect <MAC Address>
+
+The controller should now be correctly paired.
+
+
+Teleoperation
+-------------------
+
+To enable the controller you must hold down either the left or right shoulder buttons on the controller (L1 and R1 on
+the PS4 controller, or LB and RB on the Logitech F710).  The left button is for normal operation, while the right
+button enables turbo speed.
+
+.. warning::
+
+	When familiarizing yourself with Huksy's operation, always hold the left button (L1/LB).  Once you are comfortable
+	with how Husky operates, and you are in a large area with plenty of open room, then you can use R1/RB to enable
+	turbo mode.
+
+Once the controller is paired, you can use the left thumb-stick to drive the robot.  The vertical axis controls
+the robot's speed and the horizontal axis controls the robot's turning.
