@@ -102,7 +102,7 @@ This means that if you write to the **odom topic** (IE, when you publish to the 
 Operating a Physical Husky
 ===================================
 
-Husky can either drive autonomously, be :doc:`controlled through ROS messages <Huskysim>`, or you
+Husky can either drive autonomously, be :doc:`controlled through ROS messages <SimulatingHusky>`, or you
 can use the supplied remote control to teleoperate it.
 
 Safety Precautions
