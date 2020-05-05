@@ -28,12 +28,12 @@ You should be given two windows, both showing a yellow, rugged robot (Husky!)
 
 **RViz**
 
-.. image:: Huskyviz.png
+.. image:: images/Huskyviz.png
 	:scale: 50%
 
 **Gazebo**
 
-.. image:: Huskysim.png
+.. image:: images/Huskysim.png
 	:scale: 50%
 
 The left one shown is Gazebo. This is where we get a realistic simulation of our robot, including wheel slippage, skidding, and inertia.
@@ -66,7 +66,7 @@ We can also see the structure of how topics are passed around the system. Leave 
 
 This command generates a representation of how the nodes and topics running on the current ROS Master are related. You should get something similar to the following:
 
-.. image:: rqtgraph.png
+.. image:: images/rqtgraph.png
 
 The highlighted node and arrow show the topic that you are publishing to the simulated Husky. This Husky then goes on to update the gazebo virtual environment,
 which takes care of movement of the joints (wheels) and the physics of the robot.
@@ -93,7 +93,7 @@ Wait for this to complete, and then type in:
 
 This will bring up something similar to the following image.
 
-.. image:: tfframes.png
+.. image:: images/tfframes.png
 
 Here we can see that all four wheel are referenced to the **base_link**. We also see that the **odom topic** is driving the reference of the whole robot.
 This means that if you write to the **odom topic** (IE, when you publish to the **/cmd_vel topic**) then the whole robot will move.

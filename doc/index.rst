@@ -2,7 +2,7 @@ Husky UGV Tutorials
 =====================
 
 
-.. image:: TJM_5949_00001.jpg
+.. image:: images/TJM_5949_00001.jpg
 
 
 Husky is a rugged, outdoor-ready unmanned ground vehicle (UGV), suitable for research and rapid prototyping applications. Husky fully supports ROS—all of the packages are available in the `Husky github org <https://github.com/husky>`_.
