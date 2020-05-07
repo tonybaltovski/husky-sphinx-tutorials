@@ -15,30 +15,35 @@ For more information or to receive a quote, please `visit us online <http://clea
     :maxdepth: 0
     :caption: Installation
 
-    BackUpHusky.rst
-    InstallHuskySoftware.rst
-    CustomizeHuskyConfig.rst
-    jetson.rst
+    BackUpHusky
+    InstallHuskySoftware
+    CustomizeHuskyConfig
 
 .. toctree::
     :maxdepth: 0
     :caption: Using Husky
 
-    SimulatingHusky.rst
-    InterfacingWithHusky.rst
-    DrivingHusky.rst
+    SimulatingHusky
+    InterfacingWithHusky
+    DrivingHusky
 
 .. toctree::
     :maxdepth: 0
     :caption: Demo Applications: Navigation
 
-    HuskyMove.rst
-    HuskyAMCL.rst
-    HuskyGmapping.rst
-    HuskyFrontiers.rst
+    HuskyMove
+    HuskyAMCL
+    HuskyGmapping
+    HuskyFrontiers
+
+.. toctree::
+    :maxdepth: 0
+    :caption: NVIDIA Jetson
+
+    jetson_tx2
 
 .. toctree::
     :maxdepth: 0
     :caption: Package Components
 
-    HuskyPackages.rst
+    HuskyPackages
