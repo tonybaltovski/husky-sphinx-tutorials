@@ -41,6 +41,8 @@ For more information or to receive a quote, please `visit us online <http://clea
     :caption: NVIDIA Jetson
 
     jetson_tx2
+    jetson_nano
+    jetson_xavier
 
 .. toctree::
     :maxdepth: 0
