@@ -18,7 +18,7 @@ For more information or to receive a quote, please `visit us online <http://clea
     BackUpHusky.rst
     InstallHuskySoftware.rst
     CustomizeHuskyConfig.rst
-
+    jetson.rst
 
 .. toctree::
     :maxdepth: 0
