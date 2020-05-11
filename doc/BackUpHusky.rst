@@ -18,13 +18,13 @@ Performing a Backup
 
 2.  There are several places in the filesystem you should specifically look for customizations for your Husky:
 
-====================================  ====================================================
-Location:                             Description:
-====================================  ====================================================
-/etc/network/interfaces               Your robot may have a custom network configuration configured in this file.
-/etc/ros/hydro/husky-core.d/*.launch  Will contain base.launch and description.launch, may contain custom launch files for your robot configuration.  Replaced by ros.d in newer versions.
-/etc/ros/hydro/ros.d/*.launch         Will contain base.launch and description.launch, may contain custom launch files for your robot configuration.  Replaces husky-core.d in newer versions.
-/etc/ros/setup.bash                   May contain environment variables for your configuration.
-====================================  ====================================================
+===============================================	====================================================
+Location:                                       Description:
+===============================================	====================================================
+``/etc/network/interfaces``                     Your robot may have a custom network configuration configured in this file.
+``/etc/ros/hydro/husky-core.d/*.launch``        Will contain base.launch and description.launch, may contain custom launch files for your robot configuration.  Replaced by ros.d in newer versions.
+``/etc/ros/hydro/ros.d/*.launch``               Will contain base.launch and description.launch, may contain custom launch files for your robot configuration.  Replaces husky-core.d in newer versions.
+``/etc/ros/setup.bash``                         May contain environment variables for your configuration.
+===============================================	====================================================
 
 3.   Please save all these files and use them as a reference during Kinetic configuration!
