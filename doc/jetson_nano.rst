@@ -38,7 +38,7 @@ Use M3 screws to fasten the Nano to the mount
 
 Attach the Xavier and mount to the two M3 holes opposite the platform serial connector
 
-.. image:: images/Xavier/Hardware/4.JPG
+.. image:: images/Nano/Hardware/4.JPG
 
 Re-attach the power and serial cables from the platrofm to the Jetson
 
