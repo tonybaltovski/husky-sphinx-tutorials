@@ -126,7 +126,7 @@ but some older models may ship with a Logitech F710 controller.
     The Logitech F710 controller uses a USB dongle for pairing.  The robot should connect automatically to the
     controller when the dongle is inserted into a USB port and the controller is powered on.
 
-To pair the PS4 controller with the robot, run the ``bluetoothctl`` command on the robot, put the controller in pairing
+To pair the PS4 controller with the robot, run the ``sudo bluetoothctl`` command on the robot, put the controller in pairing
 mode by pressing and holding the Share and PS buttons, and enter the following sub-commands:
 
 .. code-block:: text
@@ -134,7 +134,7 @@ mode by pressing and holding the Share and PS buttons, and enter the following s
 	agent on
 	scan on
 
-The bluetooth scan will display the MAC addresses to nearby devices.  Determine with MAC address corresponds to the
+The bluetooth scan will display the MAC addresses of nearby devices.  Determine with MAC address corresponds to the
 controller and copy it.  Then run the following commands in bluetoothctl:
 
 .. code-block:: text
