@@ -123,8 +123,13 @@ but some older models may ship with a Logitech F710 controller.
 
 .. note::
 
+    Additional configuration steps for Logitec F710
+
     The Logitech F710 controller uses a USB dongle for pairing.  The robot should connect automatically to the
     controller when the dongle is inserted into a USB port and the controller is powered on.
+
+    If your robot uses a Logitech F710 you must set the ``HUSKY_LOGITECH`` environment variable to 1; otherwise
+    a PS4 controller is assumed.  See :doc:`Environment Variables <CustomizeHuskyConfig>` for more information.
 
 To pair the PS4 controller with the robot, run the ``sudo bluetoothctl`` command on the robot, put the controller in pairing
 mode by pressing and holding the Share and PS buttons, and enter the following sub-commands:

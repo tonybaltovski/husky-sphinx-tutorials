@@ -8,7 +8,7 @@ If upgrading from a prior ROS release, you should now re-examine your backed-up 
 Environment Variables
 --------------------------
 
-Husky's standard peripherals can be configured using these environment variables, to be added to the robot-wide setup file (/etc/ros/setup.bash). These environment variables are loaded on boot.
+Husky's standard peripherals can be configured using these environment variables, to be added to the robot-wide setup file (``/etc/ros/setup.bash``). These environment variables are loaded on boot.
 
 .. raw:: html
 
@@ -67,6 +67,10 @@ Husky's standard peripherals can be configured using these environment variables
 	<tr>  <td><span  id="line-49"></span><p> HUSKY_TOP_PLATE_ENABLED</tt> </p></td>
 	  <td><p> true</tt> </p></td>
 	  <td><p> Enable/disable the standard Husky top plate. </p></td>
+	</tr>
+	<tr>  <td><span  id="line-49"></span><p> HUSKY_LOGITECH</tt> </p></td>
+	  <td><p> 0</tt> </p></td>
+	  <td><p> This must be set to 1 if you use a Logitech F710 controller; otherwise a PS4 controller for teleop is assumed. </p></td>
 	</tr>
 	</tbody></table>
 
