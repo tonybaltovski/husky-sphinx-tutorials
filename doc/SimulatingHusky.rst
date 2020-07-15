@@ -9,7 +9,7 @@ Husky can be simulated in several environments using the husky_gazebo packages. 
 
 .. code:: bash
 
-	$ sudo apt-get install ros-kinetic-husky-simulator
+	sudo apt-get install ros-kinetic-husky-simulator
 
 2. Run one of the two provided simulation environments:
 
@@ -17,16 +17,16 @@ i.  Simulate Husky in an empty world. You can add new objects to this world usin
 
 .. code:: bash
 
-	$ roslaunch husky_gazebo husky_empty_world.launch
+	roslaunch husky_gazebo husky_empty_world.launch
 
 ii.  Simulate Husky in a Clearpath designed world. This is the base environment for the navigation tutorials. It will take some time to start, as the simulator will need to download resources from the Gazebo servers.
 
 .. code:: bash
 
-	$ roslaunch husky_gazebo husky_playpen.launch
+	roslaunch husky_gazebo husky_playpen.launch
 
 3.  Pick your own world in which to simulate Husky (Using roslaunch with Gazebo).
 
 .. code:: bash
 
-	$ roslaunch husky_gazebo husky_playpen.launch
+	roslaunch husky_gazebo husky_playpen.launch

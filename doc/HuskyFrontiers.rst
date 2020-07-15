@@ -13,7 +13,7 @@ Instructions
 
 .. code:: bash
 
-	$ sudo apt-get install ros-kinetic-husky-navigation
+	sudo apt-get install ros-kinetic-husky-navigation
 
 2.  In three separate terminal windows:
 
@@ -21,19 +21,19 @@ Instructions
 
 	.. code:: bash
 
-		$ roslaunch husky_gazebo husky_playpen.launch
+		roslaunch husky_gazebo husky_playpen.launch
 
 	ii. Start the Clearpath-configured rviz visualizer:
 
 	.. code:: bash
 
-		$ roslaunch husky_viz view_robot.launch
+		roslaunch husky_viz view_robot.launch
 
 	iii.  Start the frontier_exploration demo:
 
 	.. code:: bash
 
-		$ roslaunch husky_navigation exploration_demo.launch
+		roslaunch husky_navigation exploration_demo.launch
 
 3.  In the Rviz visualizer, make sure the visualizers in the Navigation group are enabled.
 
@@ -47,4 +47,4 @@ Instructions
 
 .. code:: bash
 
-	$ rosrun map_server map_saver -f <filename>
+	rosrun map_server map_saver -f <filename>
