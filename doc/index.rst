@@ -9,7 +9,9 @@ Husky is a rugged, outdoor-ready unmanned ground vehicle (UGV), suitable for res
 
 For more information or to receive a quote, please `visit us online <http://clearpathrobotics.com/husky>`_.
 
-.. Warning:: These tutorials assume that you are comfortable with ROS and the catkin build system.  Please familiarize yourself using the `ROS <http://wiki.ros.org/ROS/Tutorials>`_ and `catkin <http://wiki.ros.org/catkin/Tutorials>`_ tutorials.
+.. Warning::
+  These tutorials assume that you are comfortable working with ROS.  We recommend starting with our
+  `ROS tutorial <http:/../ros>`_ if you are not familiar with ROS already.
 
 .. toctree::
     :maxdepth: 0
