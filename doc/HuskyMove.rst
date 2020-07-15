@@ -12,7 +12,7 @@ Instructions
 
 .. code:: bash
 
-	$ sudo apt-get install ros-melodic-husky-navigation
+	sudo apt-get install ros-melodic-husky-navigation
 
 2.  In three separate terminal windows:
 
@@ -20,19 +20,19 @@ Instructions
 
 	.. code:: bash
 
-		$ roslaunch husky_gazebo husky_playpen.launch
+		roslaunch husky_gazebo husky_playpen.launch
 
 	ii. Start the Clearpath-configured `rviz <http://wiki.ros.org/rviz>`_ visualizer:
 
 	.. code:: bash
 
-		$ roslaunch husky_viz view_robot.launch
+		roslaunch husky_viz view_robot.launch
 
 	iii. Start the move_base demo:
 
 	.. code:: bash
 
-		$ roslaunch husky_navigation move_base_mapless_demo.launch
+		roslaunch husky_navigation move_base_mapless_demo.launch
 
 3.  In the Rviz visualizer, make sure the visualizers in the Navigation group are enabled.
 

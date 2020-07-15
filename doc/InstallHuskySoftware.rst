@@ -13,7 +13,7 @@ Clearpath provides a lightly customized installation image of Ubuntu Trusty Serv
 
 .. code:: bash
 
-	 $ sudo unetbootin isofile="melodic-husky-amd64-latest.iso"
+	 sudo unetbootin isofile="melodic-husky-amd64-latest.iso"
 
 3.  Connect your robot PC to wired internet access, a keyboard, and a monitor. Make sure that the PC is connected to shore power, or the Husky battery is either fully charged.
 
@@ -29,7 +29,7 @@ Clearpath provides a lightly customized installation image of Ubuntu Trusty Serv
 
 .. code:: bash
 
-	 $ rosrun husky_bringup install
+	 rosrun husky_bringup install
 
 The install script will configure a ros upstart service, that will bring up the base Husky launchfiles on boot. The script will also detect any standard peripherals (IMU, GPS, etc.) you have installed, and add them the service.
 
@@ -40,13 +40,13 @@ Testing base configuration
 
 .. code:: bash
 
-	 $ sudo systemctl start ros
+	 sudo systemctl start ros
 
 2.  The COMM light on your Husky should go from red to green. You can check that the service has started correctly by checking the logs:
 
 .. code:: bash
 
-	 $ sudo tail /var/log/upstart/ros.log -n 30
+	 sudo tail /var/log/upstart/ros.log -n 30
 
 3.  Your husky should now be accepting commands from your joystick. The service will automatically start each time you boot your Husky's PC.
 

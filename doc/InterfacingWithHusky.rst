@@ -5,7 +5,7 @@ Both simulated and real Husky robots expose the same ROS interface, and can be i
 
 .. code:: bash
 
-	$ sudo apt-get install ros-melodic-husky-desktop
+	sudo apt-get install ros-melodic-husky-desktop
 
 Visualization
 --------------
@@ -14,7 +14,7 @@ You may start a preconfigured `rviz <http://wiki.ros.org/rviz>`_ instance using 
 
 .. code:: bash
 
-	$ roslaunch husky_viz view_robot.launch
+	roslaunch husky_viz view_robot.launch
 
 Control
 --------

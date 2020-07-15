@@ -83,7 +83,7 @@ Configuring non-standard peripherals requires a source workspace on the robot PC
 
 .. code:: bash
 
-	 $ mkdir -p ~/husky_melodic_ws/src
+	 mkdir -p ~/husky_melodic_ws/src
 
 2.  Add any custom source packages to the ~/husky_melodic_ws/src directory.
 
@@ -91,15 +91,15 @@ Configuring non-standard peripherals requires a source workspace on the robot PC
 
 .. code:: bash
 
- 	$ cd ~/husky_melodic_ws/
-	$ rosdep install --from-paths src --ignore-src --rosdistro melodic -y
+ 	cd ~/husky_melodic_ws/
+	rosdep install --from-paths src --ignore-src --rosdistro melodic -y
 
 4.  Build the workspace:
 
 .. code:: bash
 
- 	$ cd ~/husky_melodic_ws/
-	$ catkin_make
+ 	cd ~/husky_melodic_ws/
+	catkin_make
 
 5.  Modify your robot-wide setup file (/etc/ros/setup.bash) to source your new workspace instead of the base melodic 		install:
 
@@ -111,7 +111,7 @@ Configuring non-standard peripherals requires a source workspace on the robot PC
 
 .. code:: bash
 
- 	$ source /etc/ros/setup.bash
+ 	source /etc/ros/setup.bash
 
 
 Robot Description
@@ -131,7 +131,7 @@ Modify your customized ``*.xacro`` file to add whatever additional features are 
 
 .. code-block:: bash
 
-		$ roslauch husky_viz view_robot.launch
+		roslauch husky_viz view_robot.launch
 
 
 Network Configuration
