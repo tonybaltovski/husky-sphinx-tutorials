@@ -11,7 +11,7 @@ For more information or to receive a quote, please `visit us online <http://clea
 
 .. Warning::
   These tutorials assume that you are comfortable working with ROS.  We recommend starting with our
-  `ROS tutorial <http:/../ros>`_ if you are not familiar with ROS already.
+  `ROS tutorial <./../ros>`_ if you are not familiar with ROS already.
 
 .. toctree::
     :maxdepth: 0
