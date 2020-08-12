@@ -43,4 +43,5 @@ For more information or to receive a quote, please `visit us online <http://clea
     :maxdepth: 0
     :caption: Package Components
 
-    HuskyPackages.rst
+    HuskyPackages
+    additional_sim_worlds
