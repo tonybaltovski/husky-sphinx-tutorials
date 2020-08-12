@@ -187,7 +187,7 @@ to equip Husky with a Sick LMS-1xx lidar, as pictured in several of the images a
 
 .. code-block:: bash
 
-  export HUSKY_LASER=1
+  export HUSKY_LMS1XX_ENABLED=1
 
 before launching the simulation world.
 
