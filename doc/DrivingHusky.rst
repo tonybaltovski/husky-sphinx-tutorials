@@ -57,6 +57,28 @@ In the above command, we publish to the **/husky_velocity_controller/cmd_vel top
 The data we publish tells the simulated Husky to go forwards at 0.5m/s, without any rotation. You should see your Husky move forwards.
 In the gazebo window, you might notice simulated wheel slip, and skidding.
 
+You can also use a game controller to drive your robot in Gazebo.  To set up your computer for teleop using the game controller
+follow these steps:
+
+1.  Connect the controller to your PC.
+
+2.  Set the ``HUSKY_JOY_DEVICE`` environment variable to point to your game controller device.  Normally this will be ``/dev/input/js0``.
+
+3.  Launch gazebo as described above.
+
+To drive the robot, Axis 0 controls the robot's steering, Axis 1 controls the forward/backward velocity,
+and buttons 4 and 5 act as enable & enable-turbo respectively.  On common controllers these correspond to the following
+physical controls:
+
+============= ==================================== ===== ===== =========
+Axis/Button   Physical Input                       PS4   F710  Xbox One
+============= ==================================== ===== ===== =========
+Axis 0        Left thumb stick horizontal          LJ    LJ    LJ
+Axis 1        Left thumb stick vertical            LJ    LJ    LJ
+Button 4      Left shoulder button or trigger      L1    LB    LB
+Button 5      Right shoulder button or trigger     R1    RB    RB
+============= ==================================== ===== ===== =========
+
 Using rqt_graph
 ----------------
 We can also see the structure of how topics are passed around the system. Leave the publishing window running, and open a terminal window. Type in:
