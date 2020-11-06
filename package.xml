@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>jackal_tutorials</name>
-  <version>0.5.2</version>
-  <description>Jackal's tutorials.</description>
+  <name>husky_tutorials</name>
+  <version>0.5.3</version>
+  <description>Husky's tutorials.</description>
   <maintainer email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</maintainer>
 
   <license>BSD</license>
