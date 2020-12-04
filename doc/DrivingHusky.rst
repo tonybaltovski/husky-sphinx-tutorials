@@ -97,3 +97,19 @@ This will bring up something similar to the following image.
 
 Here we can see that all four wheel are referenced to the **base_link**. We also see that the **odom topic** is driving the reference of the whole robot.
 This means that if you write to the **odom topic** (IE, when you publish to the **/cmd_vel topic**) then the whole robot will move.
+
+
+Teleoperation with game controller
+-----------------------------------
+
+To drive Husky using the included game controller, you must hold down either the left or right shoulder buttons
+(L1 or R2 on a PS4 controller, LB or RB on the Logitech F710).  Holding the left button will enable normal operation
+while holding the right button will enable turbo speed.
+
+.. warning::
+
+	When familiarizing yourself with Husky operation, always hold the left button (L1). Once you are comfortable with how Husky operates, and you are in a large area with plenty of open room, then you can use the right button (R1) to enable turbo mode.
+
+With either shoulder button held down, and the controller turned on and properly paired, you can use the left joystick
+on the controller to drive the robot.  The vertical axis controls the robot's forward/backward speed and the horizontal
+axis controls the robot's rotation.
