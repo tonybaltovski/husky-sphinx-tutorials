@@ -137,45 +137,12 @@ Safety Precautions
     robot, and operate the robot at safe speeds.
 
 
-Controller Pairing
-----------------------
-
-Husky ships with a standard game controller of varying models.  On newer robots this is a Sony Playstation 4 controller,
-but some older models may ship with a Logitech F710 controller.
+Teleoperation
+-------------------
 
 .. note::
 
-    Additional configuration steps for Logitec F710
-
-    The Logitech F710 controller uses a USB dongle for pairing.  The robot should connect automatically to the
-    controller when the dongle is inserted into a USB port and the controller is powered on.
-
-    If your robot uses a Logitech F710 you must set the ``HUSKY_LOGITECH`` environment variable to 1; otherwise
-    a PS4 controller is assumed.  See :doc:`Environment Variables <CustomizeHuskyConfig>` for more information.
-
-To pair the PS4 controller with the robot, run the ``sudo bluetoothctl`` command on the robot, put the controller in pairing
-mode by pressing and holding the Share and PS buttons, and enter the following sub-commands:
-
-.. code-block:: text
-
-	agent on
-	scan on
-
-The bluetooth scan will display the MAC addresses of nearby devices.  Determine with MAC address corresponds to the
-controller and copy it.  Then run the following commands in bluetoothctl:
-
-.. code-block:: text
-
-	scan off
-	pair <MAC Address>
-	trust <MAC Address>
-	connect <MAC Address>
-
-The controller should now be correctly paired.
-
-
-Teleoperation
--------------------
+	For instructions on controller pairing, see :doc:`Controller Pairing <InstallHuskySoftware>`.
 
 To enable the controller you must hold down either the left or right shoulder buttons on the controller (L1 and R1 on
 the PS4 controller, or LB and RB on the Logitech F710).  The left button is for normal operation, while the right

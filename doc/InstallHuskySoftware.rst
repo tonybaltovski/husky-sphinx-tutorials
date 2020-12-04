@@ -29,7 +29,7 @@ Clearpath provides a lightly customized installation image of Ubuntu Trusty Serv
 
 .. code:: bash
 
-	 rosrun husky_bringup install
+   rosrun husky_bringup install
 
 The install script will configure a ros upstart service, that will bring up the base Husky launchfiles on boot. The script will also detect any standard peripherals (IMU, GPS, etc.) you have installed, and add them the service.
 
@@ -40,13 +40,13 @@ Testing base configuration
 
 .. code:: bash
 
-	 sudo systemctl start ros
+   sudo systemctl start ros
 
 2.  The COMM light on your Husky should go from red to green. You can check that the service has started correctly by checking the logs:
 
 .. code:: bash
 
-	 sudo tail /var/log/upstart/ros.log -n 30
+   sudo tail /var/log/upstart/ros.log -n 30
 
 3.  Your husky should now be accepting commands from your joystick. The service will automatically start each time you boot your Husky's PC.
 
@@ -63,6 +63,68 @@ If your Husky has a UM6 IMU installed, you must calibrate the magnetometer for m
 
 .. code:: bash
 
-	rosrun husky_bringup calibrate_compass
+  rosrun husky_bringup calibrate_compass
 
-3.  Follow the onscreen instructions.
+3.  Follow the onscreen instructions.To drive Husky using the included game controller, you must hold down either the left or right shoulder buttons
+(L1 or R2 on a PS4 controller, LB or RB on the Logitech F710).  Holding the left button will enable normal operation
+while holding the right button will enable turbo speed.
+
+.. warning::
+
+	When familiarizing yourself with Husky operation, always hold the left button (L1). Once you are comfortable with how Husky operates, and you are in a large area with plenty of open room, then you can use the right button (R1) to enable turbo mode.
+
+With either shoulder button held down, and the controller turned on and properly paired, you can use the left joystick
+on the controller to drive the robot.  The vertical axis controls the robot's forward/backward speed and the horizontal
+axis controls the robot's rotation.
+
+
+Controller Pairing
+-------------------
+
+**PS4 Controller**
+
+If your PS4 controller runs out of batteries, or you purchase a new one, you might want to re-pair your platform
+and controller. To do this, put the controller into pairing mode by pressing and holding the Share & PS buttons
+until the controller's LED flashes rapidly in white.  Then SSH into the robot and run
+
+.. code-block:: bash
+
+  sudo ds4drv-pair
+
+If ``ds4drv-pair`` fails to detect the controller, you can connect it manually by running ``sudo bluetoothctl``
+and entering the following commands into the bluetooth control application:
+
+.. code-block:: text
+
+  agent on
+  scan on
+
+The bluetooth scan will display the MAC addresses of nearby devices.  Determine with MAC address corresponds to the
+controller and copy it.  Then run the following commands in bluetoothctl:
+
+.. code-block:: text
+
+  scan off
+  pair <MAC Address>
+  trust <MAC Address>
+  connect <MAC Address>
+
+The controller should now be correctly paired.
+
+
+**Logitech F710 Controller**
+
+Some Husky robots ship with a Logitech F710 controller instead of a PS4 controller.  Pairing these controllers
+is very easy: simply plug the USB dongle into one of robot's USB ports and turn the controller on.
+
+By default Husky will use the PS4 controller for teleoperation and ignore the F710.  To enable the F710 to control
+the robot, run ``sudo nano /etc/ros/setup.bash`` and add the following line to the middle of the file, under the six
+``#`` characters:
+
+.. code-block:: bash
+
+    ######
+    export HUSKY_LOGITECH=1
+
+Save the file and quit nano.  Then restart ROS by running ``sudo systemctl restart ros`` or rebooting the robot.
+When ROS restarts it will now use the Logitech controller as its teleoperation input device.
