@@ -44,8 +44,8 @@ html_sidebars = {
 }
 
 rst_prolog = """
-.. |ros_distro| replace:: indigo
-.. |ubuntu_distro| replace:: trusty
+.. |ros_distro| replace:: kinetic
+.. |ubuntu_distro| replace:: xenial
 """
 #.. ubuntu_distro: trusty
 
