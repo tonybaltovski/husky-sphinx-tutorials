@@ -117,7 +117,7 @@ Configuring non-standard peripherals requires a source workspace on the robot PC
 Robot Description
 -----------------------
 
-In ROS Hydro and earlier, custom Husky descriptions (URDFs) were provided to customers in a workspace in their home folder. Since the Husky URDF has undergone some changes for Kinetic, your robot description from prior ROS releases will have to be slightly adapted.
+In ROS Hydro and earlier, custom Husky descriptions (URDFs) were provided to customers in a workspace in their home folder. Since the Husky URDF has undergone some changes for Kinetic and later, your robot description from prior ROS releases will have to be slightly adapted.
 
 First create a new URDF file in which you will define your custom Husky additions.  e.g. ``/home/administrator/husky-custom.xacro``.  Then modify ``/etc/ros/setup.bash`` to define the HUSKY_URDF_EXTRAS variable to point to your new file:
 

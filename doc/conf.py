@@ -32,7 +32,7 @@ release = version
 #.. html_theme_path = ["."]
 html_theme = "theme"
 html_theme_path = ["."]
-htmlhelp_basename = 'jackal_tutorialsdoc'
+htmlhelp_basename = 'husky_tutorialsdoc'
 
 
 
@@ -44,8 +44,8 @@ html_sidebars = {
 }
 
 rst_prolog = """
-.. |ros_distro| replace:: indigo
-.. |ubuntu_distro| replace:: trusty
+.. |ros_distro| replace:: melodic
+.. |ubuntu_distro| replace:: bionic
 """
 #.. ubuntu_distro: trusty
 

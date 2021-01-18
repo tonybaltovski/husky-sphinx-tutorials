@@ -179,7 +179,7 @@ Note the IP address of the Xavier and `setup your host computer <http://wiki.ros
 
 You can then run ``roslaunch husky_viz view_robot.launch`` on your host machine.  You should see a model of the robot and be able to move the Husky using the interactive markers. See: :doc:`Navigating with Husky <DrivingHusky>` for more information on using maps for navigation and localization.
 
-The Xavier will reboot and will have ROS Kinetic installed along with the Husky drivers.
+The Xavier will reboot and will have ROS Melodic installed along with the Husky drivers.
 
 .. note::
   Since this image was created, the ROS buildfarm has changed their package-signing key.  You will need to add the new one with:
