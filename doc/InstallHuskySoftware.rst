@@ -4,7 +4,7 @@ Install and Configure Husky Software
 Installing Husky Software
 ---------------------------
 
-Clearpath provides a lightly customized installation image of Ubuntu Trusty Server 14.04, that automatically pulls in all necessary dependencies for Husky software.
+Clearpath provides a lightly customized installation image of Ubuntu 18.04 "Bionic" which automatically pulls in all necessary dependencies for Husky software.
 
 
 1.  Download the appropriate `Melodic Husky ISO image <https://packages.clearpathrobotics.com/stable/images/latest/melodic-husky/>`_ for your platform (32 bit - i386, 64 bit - amd64).
