@@ -2,7 +2,7 @@ Backing Up Husky Configuration
 =================================
 
 
-Upgrading your Clearpath Husky to ROS Melodic from older ROS distributions is a straightforward process, however it's important to understand that each Husky is different, having undergone customization to your specifications by our robotsmiths.
+Upgrading your Clearpath Husky to ROS Melodic from older ROS distributions is a straightforward process, however it's important to understand that each Husky is different, having undergone customization to your specifications by our robotsmiths.  For more complete upgrade instructions see `this guide <https://clearpathrobotics.com/assets/guides/kinetic/kinetic-to-melodic/index.html>`_.
 
 Please take the time to understand what these modifications are, and how to recreate them on your fresh install of Ubuntu Bionic/ROS Melodic.
 
@@ -22,8 +22,8 @@ Performing a Backup
 Location:                                       Description:
 ===============================================	====================================================
 ``/etc/network/interfaces``                     Your robot may have a custom network configuration configured in this file.
-``/etc/ros/hydro/husky-core.d/*.launch``        Will contain base.launch and description.launch, may contain custom launch files for your robot configuration.  Replaced by ros.d in newer versions.
-``/etc/ros/hydro/ros.d/*.launch``               Will contain base.launch and description.launch, may contain custom launch files for your robot configuration.  Replaces husky-core.d in newer versions.
+``/etc/ros/*/husky-core.d/*.launch``            Will contain ``base.launch`` and ``description.launch``, may contain custom launch files for your robot configuration.  Replaced by ``ros.d`` in newer versions.
+``/etc/ros/*/ros.d/*.launch``                   Will contain ``base.launch`` and ``description.launch``, may contain custom launch files for your robot configuration.  Replaces ``husky-core.d`` in newer versions.
 ``/etc/ros/setup.bash``                         May contain environment variables for your configuration.
 ===============================================	====================================================
 

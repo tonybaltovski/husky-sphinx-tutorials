@@ -1,25 +1,27 @@
 Install and Configure Husky Software
 =======================================
 
+.. note:: If you are upgrading your Husky from an older version of ROS, please refer to `our upgrade instructions here <https://clearpathrobotics.com/assets/guides/kinetic/kinetic-to-melodic/index.html>`_.
+
 Installing Husky Software
 ---------------------------
 
 Clearpath provides a lightly customized installation image of Ubuntu 18.04 "Bionic" which automatically pulls in all necessary dependencies for Husky software.
 
 
-1.  Download the appropriate `Melodic Husky ISO image <https://packages.clearpathrobotics.com/stable/images/latest/melodic-husky/>`_ for your platform (32 bit - i386, 64 bit - amd64).
+1.  Download the appropriate `Melodic Husky ISO image <https://packages.clearpathrobotics.com/stable/images/latest/melodic-bionic/>`_ for your platform (32 bit - i386, 64 bit - amd64).
 
-2. Copy the image to a USB drive using unetbootin:
+2. Copy the image to a USB drive using unetbootin, rufus, balena etcher, or a similar program. For example:
 
 .. code:: bash
 
-	 sudo unetbootin isofile="melodic-husky-amd64-latest.iso"
+	 sudo unetbootin isofile="clearpath-universal-melodic-amd64-0.4.17.iso"
 
 3.  Connect your robot PC to wired internet access, a keyboard, and a monitor. Make sure that the PC is connected to shore power, or the Husky battery is either fully charged.
 
 .. warning:: The next step wipe your robot's hard drive, so make sure you have that image `backed up <http://wiki.ros.org/husky_bringup/Tutorials/Backing%20Up%20Husky%20Configuration>`_ on another system!
 
-4.  Boot your robot PC from the USB drive, and let installer work it's magic.
+4.  Boot your robot PC from the USB drive, and let installer work its magic.  If asked for a partitioning method choose ``Guided - use entire disk and set up LVM``.
 5.  The setup process will be automated, and may take a long time depending on the speed of your internet connection.
 6.  Once the setup process is complete, the PC will turn off. Please unplug the USB drive and turn the PC back on.
 7.  On first boot, the username will be administrator and the password will be clearpath.
