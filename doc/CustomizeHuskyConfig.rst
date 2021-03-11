@@ -20,127 +20,127 @@ Husky's standard peripherals can be configured using these environment variables
  	 <td><p> None </p></td>
 	  <td><p>  Configure a network interface to trigger the husky-core</tt> job, and initialize ROS_IP</tt>. If not set, husky-core</tt> will define ROS_HOSTNAME</tt> instead (see <a href="/ROS/NetworkSetup#Name_resolution">Network Setup</a>) </p></td>
 	</tr>
-	<tr>  <td><span  id="line-38"></span><p> HUSKY_IMU_PORT</tt> </p></td>
+	<tr>  <td><span  id="line-38"></span><p> <tt>HUSKY_IMU_PORT</tt> </p></td>
  	 <td><p> <tt>/dev/clearpath/imu</tt> </p></td>
  	 <td><p>  Port for the Husky UM6 IMU if present, must be set before running husky_bringup&nbsp;install</tt> </p></td>
 	</tr>
-	<tr>  <td><span  id="line-39"></span><p> HUSKY_IMU_XYZ</tt> </p></td>
+	<tr>  <td><span  id="line-39"></span><p> <tt>HUSKY_IMU_XYZ</tt> </p></td>
  	 <td><p> <tt>0.19&nbsp;0.0&nbsp;0.149</tt> </p></td>
  	 <td><p>  Pose offset for the Husky IMU's standard mounting location </p></td>
 	</tr>
-	<tr>  <td><span  id="line-40"></span><p> HUSKY_IMU_RPY</tt> </p></td>
+	<tr>  <td><span  id="line-40"></span><p> <tt>HUSKY_IMU_RPY</tt> </p></td>
   <td><p> <tt>0.0&nbsp;-1.5708&nbsp;3.1416</tt> </p></td>
   <td><p>  Orientation offset for the Husky IMU's standard mounting location </p></td>
 	</tr>
-	<tr>  <td><span  id="line-41"></span><p> HUSKY_NAVSAT_PORT</tt> </p></td>
+	<tr>  <td><span  id="line-41"></span><p> <tt>HUSKY_NAVSAT_PORT</tt> </p></td>
 	  <td><p> <tt>/dev/clearpath/gps</tt> </p></td>
 	  <td><p> Port for the Husky GPS if present, must be set before running husky_bringup&nbsp;install</tt> </p></td>
 	</tr>
-	<tr>  <td><span  id="line-42"></span><p> HUSKY_NAVSAT_BAUD</tt> </p></td>
+	<tr>  <td><span  id="line-42"></span><p> <tt>HUSKY_NAVSAT_BAUD</tt> </p></td>
 	  <td><p> <tt>19200</tt> </p></td>
 	  <td><p> Baudrate for the Husky GPS </p></td>
 	</tr>
-	<tr>  <td><span  id="line-43"></span><p> HUSKY_UR5_IP</tt> </p></td>
+	<tr>  <td><span  id="line-43"></span><p> <tt>HUSKY_UR5_IP</tt> </p></td>
 	  <td><p> <tt>None </p></td>
 	  <td><p> IP Address for the UR5 manipulator if present, must be set before running husky_bringup&nbsp;install</tt> </p></td>
 	</tr>
-	<tr>  <td><span  id="line-44"></span><p> HUSKY_UR5_ENABLED</tt> </p></td>
+	<tr>  <td><span  id="line-44"></span><p> <tt>HUSKY_UR5_ENABLED</tt> </p></td>
 	  <td><p> <tt>false</tt> </p></td>
 	  <td><p> Enable/disable the UR5 manipulator. </p></td>
 	</tr>
-	<tr>  <td><span  id="line-45"></span><p> HUSKY_LMS1XX_IP</tt> </p></td>
+	<tr>  <td><span  id="line-45"></span><p> <tt>HUSKY_LMS1XX_IP</tt> </p></td>
 	  <td><p> None </p></td>
 	  <td><p> IP Address for the SICK LMS1XX LIDAR if present, must be set before running husky_bringup&nbsp;install</tt> </p></td>
 	</tr>
-	<tr>  <td><span  id="line-46"></span><p> HUSKY_LMS1XX_ENABLED</tt> </p></td>
+	<tr>  <td><span  id="line-46"></span><p> <tt>HUSKY_LMS1XX_ENABLED</tt> </p></td>
 	  <td><p> <tt>false</tt> </p></td>
 	  <td><p> Enable/disable the SICK LMS1XX LIDAR </p></td>
 	</tr>
-	<tr>  <td><span  id="line-47"></span><p> HUSKY_LMS1XX_XYZ</tt> </p></td>
+	<tr>  <td><span  id="line-47"></span><p> <tt>HUSKY_LMS1XX_XYZ</tt> </p></td>
 	  <td><p> <tt>0.2206&nbsp;0.0&nbsp;0.00635</tt> </p></td>
 	  <td><p>  Pose offset for the SICK LMS1XX LIDAR </p></td>
 	</tr>
-	<tr>  <td><span  id="line-48"></span><p> HUSKY_LMS1XX_RPY</tt> </p></td>
+	<tr>  <td><span  id="line-48"></span><p> <tt>HUSKY_LMS1XX_RPY</tt> </p></td>
 	  <td><p> <tt>0.0&nbsp;0.0&nbsp;0.0</tt> </p></td>
 	  <td><p>  Orientation offset for the SICK LMS1XX LIDAR </p></td>
 	</tr>
-	<tr>  <td><span  id="line-48"></span><p> HUSKY_LMS1XX_IP</tt> </p></td>
+	<tr>  <td><span  id="line-48"></span><p> <tt>HUSKY_LMS1XX_IP</tt> </p></td>
 	  <td><p> <tt>192.168.131.20</tt> </p></td>
 	  <td><p>  IP address of the SICK LMS1XX LIDAR </p></td>
 	</tr>
-	<tr>  <td><span  id="line-46"></span><p> HUSKY_LMS1XX_SECONDARY_ENABLED</tt> </p></td>
+	<tr>  <td><span  id="line-46"></span><p> <tt>HUSKY_LMS1XX_SECONDARY_ENABLED</tt> </p></td>
 	  <td><p> <tt>false</tt> </p></td>
 	  <td><p> Enable/disable the secondary SICK LMS1XX LIDAR </p></td>
 	</tr>
-	<tr>  <td><span  id="line-47"></span><p> HUSKY_LMS1XX_SECONDARY_XYZ</tt> </p></td>
+	<tr>  <td><span  id="line-47"></span><p> <tt>HUSKY_LMS1XX_SECONDARY_XYZ</tt> </p></td>
 	  <td><p> <tt>-0.2206&nbsp;0.0&nbsp;0.00635</tt> </p></td>
 	  <td><p>  Pose offset for the secondary SICK LMS1XX LIDAR </p></td>
 	</tr>
-	<tr>  <td><span  id="line-48"></span><p> HUSKY_LMS1XX_SECONDARY_RPY</tt> </p></td>
+	<tr>  <td><span  id="line-48"></span><p> <tt>HUSKY_LMS1XX_SECONDARY_RPY</tt> </p></td>
 	  <td><p> <tt>0.0&nbsp;0.0&nbsp;0.0</tt> </p></td>
 	  <td><p>  Orientation offset for the secondary SICK LMS1XX LIDAR </p></td>
 	</tr>
-	<tr>  <td><span  id="line-48"></span><p> HUSKY_LMS1XX_SECONDARY_IP</tt> </p></td>
+	<tr>  <td><span  id="line-48"></span><p> <tt>HUSKY_LMS1XX_SECONDARY_IP</tt> </p></td>
 	  <td><p> <tt>192.168.131.21</tt> </p></td>
 	  <td><p>  IP address of the secondary SICK LMS1XX LIDAR </p></td>
 	</tr>
-	<tr>  <td><span  id="line-46"></span><p> HUSKY_LASER_3D_ENABLED</tt> </p></td>
+	<tr>  <td><span  id="line-46"></span><p> <tt>HUSKY_LASER_3D_ENABLED</tt> </p></td>
 	  <td><p> <tt>false</tt> </p></td>
 	  <td><p> Enable/disable the main Velodyne VLP-16 </p></td>
 	</tr>
-	<tr>  <td><span  id="line-47"></span><p> HUSKY_LASER_3D_XYZ</tt> </p></td>
+	<tr>  <td><span  id="line-47"></span><p> <tt>HUSKY_LASER_3D_XYZ</tt> </p></td>
 	  <td><p> <tt>0&nbsp;0&nbsp;0</tt> </p></td>
 	  <td><p>  Pose offset for the Velodyne VLP-16 </p></td>
 	</tr>
-	<tr>  <td><span  id="line-48"></span><p> HUSKY_LASER_3D_RPY</tt> </p></td>
+	<tr>  <td><span  id="line-48"></span><p> <tt>HUSKY_LASER_3D_RPY</tt> </p></td>
 	  <td><p> <tt>0.0&nbsp;0.0&nbsp;0.0</tt> </p></td>
 	  <td><p>  Orientation offset for the Velodyne VLP-16 </p></td>
 	</tr>
-	<tr>  <td><span  id="line-48"></span><p> HUSKY_LASER_3D_HOST</tt> </p></td>
+	<tr>  <td><span  id="line-48"></span><p> <tt>HUSKY_LASER_3D_HOST</tt> </p></td>
 	  <td><p> <tt>192.168.131.20</tt> </p></td>
 	  <td><p>  IP address of the Velodyne VLP-16 </p></td>
 	</tr>
-	<tr>  <td><span  id="line-48"></span><p> HUSKY_LASER_3D_TOPIC</tt> </p></td>
+	<tr>  <td><span  id="line-48"></span><p> <tt>HUSKY_LASER_3D_TOPIC</tt> </p></td>
 	  <td><p> <tt>points</tt> </p></td>
 	  <td><p>  ROS topic the Velodyne VLP-16 data publishes to </p></td>
 	</tr>
-	<tr>  <td><span  id="line-46"></span><p> HUSKY_REALSENSE_ENABLED</tt> </p></td>
+	<tr>  <td><span  id="line-46"></span><p> <tt>HUSKY_REALSENSE_ENABLED</tt> </p></td>
 	  <td><p> <tt>false</tt> </p></td>
 	  <td><p> Enable/disable the main RealSense D435 camera </p></td>
 	</tr>
-	<tr>  <td><span  id="line-47"></span><p> HUSKY_REALSENSE_MOUNT_FRAME</tt> </p></td>
+	<tr>  <td><span  id="line-47"></span><p> <tt>HUSKY_REALSENSE_MOUNT_FRAME</tt> </p></td>
 	  <td><p> <tt>sensor_arch_mount_link</tt> </p></td>
 	  <td><p>  Mounting point for the RealSense D435 camera </p></td>
 	</tr>
-	<tr>  <td><span  id="line-48"></span><p> HUSKY_REALSENSE_OFFSET</tt> </p></td>
+	<tr>  <td><span  id="line-48"></span><p> <tt>HUSKY_REALSENSE_OFFSET</tt> </p></td>
 	  <td><p> <tt>0.0&nbsp;0.0&nbsp;0.0</tt> </p></td>
 	  <td><p>  Pose offset for the RealSense D435 </p></td>
 	</tr>
-	<tr>  <td><span  id="line-48"></span><p> HUSKY_REALSENSE_OFFSET</tt> </p></td>
+	<tr>  <td><span  id="line-48"></span><p> <tt>HUSKY_REALSENSE_OFFSET</tt> </p></td>
 	  <td><p> <tt>0&nbsp;0&nbsp;0</tt> </p></td>
 	  <td><p>  Orientation offset for the RealSense D435 </p></td>
 	</tr>
-	<tr>  <td><span  id="line-49"></span><p> HUSKY_TOP_PLATE_ENABLED</tt> </p></td>
+	<tr>  <td><span  id="line-49"></span><p> <tt>HUSKY_TOP_PLATE_ENABLED</tt> </p></td>
 	  <td><p> <tt>true</tt> </p></td>
 	  <td><p> Enable/disable the standard Husky top plate. </p></td>
 	</tr>
-	<tr>  <td><span  id="line-49"></span><p> HUSKY_SENSOR_ARCH</tt> </p></td>
+	<tr>  <td><span  id="line-49"></span><p> <tt>HUSKY_SENSOR_ARCH</tt> </p></td>
 	  <td><p> <tt>false</tt> </p></td>
 	  <td><p> Enable/disable the sensor/accessory arch. </p></td>
 	</tr>
-	<tr>  <td><span  id="line-49"></span><p> HUSKY_SENSOR_ARCH_HEIGHT</tt> </p></td>
+	<tr>  <td><span  id="line-49"></span><p> <tt>HUSKY_SENSOR_ARCH_HEIGHT</tt> </p></td>
 	  <td><p> <tt>510</tt> </p></td>
 	  <td><p> The height of the sensor arch in mm.  Must be either 510 or 300 </p></td>
 	</tr>
-	<tr>  <td><span  id="line-49"></span><p> HUSKY_SENSOR_ARCH_OFFSET</tt> </p></td>
+	<tr>  <td><span  id="line-49"></span><p> <tt>HUSKY_SENSOR_ARCH_OFFSET</tt> </p></td>
 	  <td><p> <tt>0&nbsp;0&nbsp;0</tt> </p></td>
 	  <td><p> Pose offset for the sensor arch </p></td>
 	</tr>
-	<tr>  <td><span  id="line-49"></span><p> HUSKY_SENSOR_ARCH_RPY</tt> </p></td>
+	<tr>  <td><span  id="line-49"></span><p> <tt>HUSKY_SENSOR_ARCH_RPY</tt> </p></td>
 	  <td><p> <tt>0&nbsp;0&nbsp;0</tt> </p></td>
 	  <td><p> Orientation offset for the sensor arch </p></td>
 	</tr>
-	<tr>  <td><span  id="line-49"></span><p> HUSKY_LOGITECH</tt> </p></td>
+	<tr>  <td><span  id="line-49"></span><p> <tt>HUSKY_LOGITECH</tt> </p></td>
 	  <td><p> <tt>0</tt> </p></td>
 	  <td><p> This must be set to 1 if you use a Logitech F710 controller; otherwise a PS4 controller for teleop is assumed. </p></td>
 	</tr>
