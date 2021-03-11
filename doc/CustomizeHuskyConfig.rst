@@ -16,7 +16,7 @@ Husky's standard peripherals can be configured using these environment variables
  	 <td><p> <strong>Default</strong> </p></td>
  	 <td><p> <strong>Description</strong> </p></td>
 	</tr>
-	<tr>  <td><span  id="line-37"></span><p> ROBOT_NETWORK</tt> </p></td>
+	<tr>  <td><span  id="line-37"></span><p> <tt>ROBOT_NETWORK</tt> </p></td>
  	 <td><p> None </p></td>
 	  <td><p>  Configure a network interface to trigger the husky-core</tt> job, and initialize ROS_IP</tt>. If not set, husky-core</tt> will define ROS_HOSTNAME</tt> instead (see <a href="/ROS/NetworkSetup#Name_resolution">Network Setup</a>) </p></td>
 	</tr>
