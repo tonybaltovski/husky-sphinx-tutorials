@@ -1,6 +1,8 @@
 Install and Configure Husky Software
 =======================================
 
+.. note:: If you are upgrading your Husky from an older version of ROS, please refer to `our upgrade instructions here <https://clearpathrobotics.com/assets/guides/kinetic/kinetic-to-melodic/index.html>`_.
+
 Installing Husky Software
 ---------------------------
 

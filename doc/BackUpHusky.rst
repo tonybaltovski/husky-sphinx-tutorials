@@ -2,7 +2,7 @@ Backing Up Husky Configuration
 =================================
 
 
-Upgrading your Clearpath Husky to ROS Kinetic from older ROS distributions is a straightforward process, however it's important to understand that each Husky is different, having undergone customization to your specifications by our robotsmiths.
+Upgrading your Clearpath Husky to ROS Kinetic from older ROS distributions is a straightforward process, however it's important to understand that each Husky is different, having undergone customization to your specifications by our robotsmiths. For more complete upgrade instructions see `this guide <https://clearpathrobotics.com/assets/guides/kinetic/kinetic-to-melodic/index.html>`_.
 
 Please take the time to understand what these modifications are, and how to recreate them on your fresh install of Ubuntu Xenial/ROS Kinetic.
 
