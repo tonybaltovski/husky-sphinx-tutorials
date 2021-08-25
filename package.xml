@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>husky_tutorials</name>
-  <version>0.5.3</version>
+  <version>0.6.0</version>
   <description>Husky's tutorials.</description>
   <maintainer email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</maintainer>
 
