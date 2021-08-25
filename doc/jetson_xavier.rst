@@ -1,6 +1,15 @@
 Installing a Jetson Xavier AGX
 ==============================
 
+.. warning::
+
+    This page is a copy of the corresponding instructions from ROS Melodic.  At the time of writing Nvidia has not
+    yet released support for Ubuntu 20.04 on Jetson platforms.  This means you cannot currently run ROS Noetic on
+    a Jetson Xavier AGX.
+
+    When Nvidia has released support for Ubuntu 20.04 we will remove this warning and update the instructions below
+    as-necessary.
+
 Step 1: Remove mini-ITX Computer
 --------------------------------
 
@@ -22,7 +31,7 @@ Gently lift the computer out of the platform and clean the area.
 
 Step 2: Install the Xavier
 --------------------------
-Custom mounting brackets are available `on Github <https://github.com/clearpathrobotics/jetson_setup/raw/melodic/models/JetsonNanoXavierHuskyMount.stl>`_
+Custom mounting brackets are available `on Github <https://github.com/clearpathrobotics/jetson_setup/raw/noetic/models/JetsonNanoXavierHuskyMount.stl>`_
 
 Print this mount off using a 3D printer.  A 0.2mm layer thickness should be sufficient.
 
@@ -47,7 +56,7 @@ Re-attach the power and serial cables from the platrofm to the Jetson
 Step 3: Installing the Software
 -------------------------------
 
-`Download the latest version of Nvidia's SDK Manager <https://developer.nvidia.com/nvidia-sdk-manager>`_ on a PC running Ubuntu 18.04.  While that's downloading, put the Xavier into reovery mode by following these steps:
+`Download the latest version of Nvidia's SDK Manager <https://developer.nvidia.com/nvidia-sdk-manager>`_ on a PC running Ubuntu 20.04.  While that's downloading, put the Xavier into reovery mode by following these steps:
 
 1.  Use the included USB cable to connect the Linux host computer to the front USB Type-C connector on the developer kit.
 2.  Make sure the Xavier is powered off
@@ -119,7 +128,7 @@ Once the OS is setup, you will be brought to the desktop.
 
 .. image:: images/Xavier/Software/12.png
 
-Open a terminal and run ``ifconfig`` to see the IP address it is using.  You will need to connect it to network through wireless or ethernet.
+Open a terminal and run ``ip a`` to see the IP address it is using.  You will need to connect it to network through wireless or ethernet.
 
 .. image:: images/Xavier/Software/13.png
 
@@ -172,13 +181,13 @@ If you would like to pair a PS4 controller to drive the Husky, hold down the PS 
 
 The light on the controller will turn solid blue once it is paired. With the controller paired you should be able to control the Husky by pressing L1 and using the left stick to drive. For more information see the Husky manual.
 
-To use your host computer with the Husky first `install ROS <http://wiki.ros.org/melodic/Installation>`_.  Once ROS is installed, install the Husky packages with ``sudo apt install ros-melodic-husky*``
+To use your host computer with the Husky first `install ROS <http://wiki.ros.org/noetic/Installation>`_.  Once ROS is installed, install the Husky packages with ``sudo apt install ros-noetic-husky*``
 
 Note the IP address of the Xavier and `setup your host computer <http://wiki.ros.org/ROS/Tutorials/MultipleMachines>`_ to use it as the master.
 
 You can then run ``roslaunch husky_viz view_robot.launch`` on your host machine.  You should see a model of the robot and be able to move the Husky using the interactive markers. See: :doc:`Navigating with Husky <DrivingHusky>` for more information on using maps for navigation and localization.
 
-The Xavier will reboot and will have ROS Melodic installed along with the Husky drivers.
+The Xavier will reboot and will have ROS Noetic installed along with the Husky drivers.
 
 .. note::
   Since this image was created, the ROS buildfarm has changed their package-signing key.  You will need to add the new one with:
@@ -189,6 +198,6 @@ To setup the Jetson to work with the Husky, run ``bash ~/HUSKY_SETUP.sh`` on the
 
 If you would like to pair a PS4 controller to drive the Husky, hold down the PS and Share buttons on the controller until the light bar starts to flash. In a terminal on the Husky, run ``sudo ds4drv-pair`` and wait for the controller to connect.  With the controller paired you should be able to control the Husky by pressing L1 and using the left stick to drive. For more information see the Husky manual.
 
-To use your host computer with the Husky first install ROS (http://wiki.ros.org/melodic/Installation) and setup a catkin workspace (http://wiki.ros.org/catkin/Tutorials/create_a_workspace). Clone the general Husky repo and the desktop specific repo in to the src folder and compile it. Installing rosdeps if necessary with "rosdep install --from-paths src --ignore-src -r -y". https://github.com/husky/husky and https://github.com/husky/husky_desktop. Note the network ip of the Xavier and setup your host computer to use it as the master. http://wiki.ros.org/ROS/Tutorials/MultipleMachines
+To use your host computer with the Husky first install ROS (http://wiki.ros.org/noetic/Installation) and setup a catkin workspace (http://wiki.ros.org/catkin/Tutorials/create_a_workspace). Clone the general Husky repo and the desktop specific repo in to the src folder and compile it. Installing rosdeps if necessary with "rosdep install --from-paths src --ignore-src -r -y". https://github.com/husky/husky and https://github.com/husky/husky_desktop. Note the network ip of the Xavier and setup your host computer to use it as the master. http://wiki.ros.org/ROS/Tutorials/MultipleMachines
 
 You can then run "roslaunch husky_viz view_robot.launch" on your host machine.  You should see a model of the robot and be able to move the Husky using the interactive markers. See: http://www.clearpathrobotics.com/assets/guides/husky/navigation.html

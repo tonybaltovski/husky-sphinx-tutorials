@@ -44,8 +44,8 @@ html_sidebars = {
 }
 
 rst_prolog = """
-.. |ros_distro| replace:: melodic
-.. |ubuntu_distro| replace:: bionic
+.. |ros_distro| replace:: noetic
+.. |ubuntu_distro| replace:: focal
 """
 #.. ubuntu_distro: trusty
 

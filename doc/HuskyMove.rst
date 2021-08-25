@@ -12,7 +12,7 @@ Instructions
 
 .. code:: bash
 
-	sudo apt-get install ros-melodic-husky-navigation
+	sudo apt-get install ros-noetic-husky-navigation
 
 2.  In three separate terminal windows:
 

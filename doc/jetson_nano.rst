@@ -1,6 +1,15 @@
 Installing a Jetson Nano
 ==========================
 
+.. warning::
+
+    This page is a copy of the corresponding instructions from ROS Melodic.  At the time of writing Nvidia has not
+    yet released support for Ubuntu 20.04 on Jetson platforms.  This means you cannot currently run ROS Noetic on
+    a Jetson Nano.
+
+    When Nvidia has released support for Ubuntu 20.04 we will remove this warning and update the instructions below
+    as-necessary.
+
 Step 1: Remove mini-ITX Computer
 --------------------------------
 
@@ -22,7 +31,7 @@ Gently lift the computer out of the platform and clean the area.
 
 Step 2: Install the Nano
 ------------------------
-Custom mounting brackets are available `on Github <https://github.com/clearpathrobotics/jetson_setup/raw/melodic/models/JetsonNanoXavierHuskyMount.stl>`_
+Custom mounting brackets are available `on Github <https://github.com/clearpathrobotics/jetson_setup/raw/noetic/models/JetsonNanoXavierHuskyMount.stl>`_
 
 Print this mount off using a 3D printer.  A 0.2mm layer thickness should be sufficient.
 
@@ -121,18 +130,18 @@ The light on the controller will turn solid blue once it is paired. With the con
 
 The light on the controller will turn solid blue once it is paired. With the controller paired you should be able to control the Husky by pressing L1 and using the left stick to drive. For more information see the Husky manual.
 
-To use your host computer with the Husky first `install ROS <http://wiki.ros.org/melodic/Installation>`_.  Once ROS is installed, install the Husky packages with ``sudo apt install ros-melodic-Husky*``
+To use your host computer with the Husky first `install ROS <http://wiki.ros.org/noetic/Installation>`_.  Once ROS is installed, install the Husky packages with ``sudo apt install ros-noetic-Husky*``
 
 Note the IP address of the Nano and `setup your host computer <http://wiki.ros.org/ROS/Tutorials/MultipleMachines>`_ to use it as the master.
 
 You can then run ``roslaunch Husky_viz view_robot.launch`` on your host machine.  You should see a model of the robot and be able to move the Husky using the interactive markers. See: :doc:`Navigating with Husky <DrivingHusky>` for more information on using maps for navigation and localization.
 
-The Nano will reboot and will have ROS Melodic installed along with the Husky drivers.
+The Nano will reboot and will have ROS Noetic installed along with the Husky drivers.
 
 To setup the Jetson to work with the Husky, run ``bash ~/JACKAL_SETUP.sh`` on the Jetson and restart. When the Jetson starts up again, it should be connected to the Husky. To see that the Husky is connected by opening a terminal and executing "rostopic echo /status". You should see a 1hz message containing the Husky's diagnostic information.
 
 If you would like to pair a PS4 controller to drive the Husky, hold down the PS and Share buttons on the controller until the light bar starts to flash. In a terminal on the Husky, run ``sudo ds4drv-pair`` and wait for the controller to connect.  With the controller paired you should be able to control the Husky by pressing L1 and using the left stick to drive. For more information see the Husky manual.
 
-To use your host computer with the Husky first install ROS (http://wiki.ros.org/melodic/Installation) and setup a catkin workspace (http://wiki.ros.org/catkin/Tutorials/create_a_workspace). Clone the general Husky repo and the desktop specific repo in to the src folder and compile it. Installing rosdeps if necessary with "rosdep install --from-paths src --ignore-src -r -y". https://github.com/Husky/Husky and https://github.com/Husky/Husky_desktop. Note the network ip of the Nano and setup your host computer to use it as the master. http://wiki.ros.org/ROS/Tutorials/MultipleMachines
+To use your host computer with the Husky first install ROS (http://wiki.ros.org/noetic/Installation) and setup a catkin workspace (http://wiki.ros.org/catkin/Tutorials/create_a_workspace). Clone the general Husky repo and the desktop specific repo in to the src folder and compile it. Installing rosdeps if necessary with "rosdep install --from-paths src --ignore-src -r -y". https://github.com/Husky/Husky and https://github.com/Husky/Husky_desktop. Note the network ip of the Nano and setup your host computer to use it as the master. http://wiki.ros.org/ROS/Tutorials/MultipleMachines
 
 You can then run "roslaunch Husky_viz view_robot.launch" on your host machine.  You should see a model of the robot and be able to move the Husky using the interactive markers. See: http://www.clearpathrobotics.com/assets/guides/Husky/navigation.html

@@ -2,9 +2,9 @@ Backing Up Husky Configuration
 =================================
 
 
-Upgrading your Clearpath Husky to ROS Melodic from older ROS distributions is a straightforward process, however it's important to understand that each Husky is different, having undergone customization to your specifications by our robotsmiths.  For more complete upgrade instructions see `this guide <https://clearpathrobotics.com/assets/guides/kinetic/kinetic-to-melodic/index.html>`_.
+Upgrading your Clearpath Husky to ROS Noetic from older ROS distributions is a straightforward process, however it's important to understand that each Husky is different, having undergone customization to your specifications by our robotsmiths.  For more complete upgrade instructions see `this guide <https://clearpathrobotics.com/assets/guides/kinetic/kinetic-to-melodic/index.html>`_.
 
-Please take the time to understand what these modifications are, and how to recreate them on your fresh install of Ubuntu Bionic/ROS Melodic.
+Please take the time to understand what these modifications are, and how to recreate them on your fresh install of Ubuntu Focal/ROS Noetic.
 
 Performing a Backup
 -----------------------------
@@ -14,7 +14,7 @@ Performing a Backup
 
 *  The easiest approach may be to either connect a removable (USB or similar) hard drive to the robot PC, or to unplug the robot hard drive and 	insert it into a PC or workstation.
 *  You can then use a tool such as CloneZilla or dd to write a backup image of your robot's hard drive onto another hard drive.
-*  Alternatively, you can simply replace the robot computer's hard-drive, reserving the Hydro-configured drive and installing a new one to use with Melodic.
+*  Alternatively, you can simply replace the robot computer's hard-drive, reserving the Hydro-configured drive and installing a new one to use with Noetic.
 
 2.  There are several places in the filesystem you should specifically look for customizations for your Husky:
 
@@ -27,4 +27,4 @@ Location:                                       Description:
 ``/etc/ros/setup.bash``                         May contain environment variables for your configuration.
 ===============================================	====================================================
 
-3.   Please save all these files and use them as a reference during Melodic configuration!
+3.   Please save all these files and use them as a reference during Noetic configuration!

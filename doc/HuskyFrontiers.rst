@@ -11,7 +11,7 @@ Preparation
 
 .. warning::
 
-    The ``frontier_exploration`` package is no longer officially supported in ROS Melodic.  These instructions
+    The ``frontier_exploration`` package is no longer officially supported in ROS Noetic.  These instructions
     require building the package from source.  Because the package is no longer officially supported support for
     any issues you encounter will be limited.
 
@@ -47,9 +47,9 @@ Make sure you have the ``husky_navigation`` package installed by running
 
 .. code-block:: bash
 
-  sudo apt-get install ros-melodic-husky-navigation
+  sudo apt-get install ros-noetic-husky-navigation
 
-Because ``frontier_exploration`` is not officially supported by ROS Melodic you will need to modify the following
+Because ``frontier_exploration`` is not officially supported by ROS Noetic you will need to modify the following
 launch files inside the ``husky_navigation`` package:
 
 * launch/exploration.launch

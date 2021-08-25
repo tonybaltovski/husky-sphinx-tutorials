@@ -9,7 +9,7 @@ Husky can be simulated in several environments using the husky_gazebo packages. 
 
 .. code:: bash
 
-	sudo apt-get install ros-melodic-husky-simulator
+	sudo apt-get install ros-noetic-husky-simulator
 
 2. Run one of the two provided simulation environments:
 
