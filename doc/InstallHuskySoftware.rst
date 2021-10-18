@@ -9,7 +9,7 @@ Installing Husky Software
 Clearpath provides a lightly customized installation image of Ubuntu 18.04 "Bionic" which automatically pulls in all necessary dependencies for Husky software.
 
 
-1.  Download the appropriate `Melodic Husky ISO image <https://packages.clearpathrobotics.com/stable/images/latest/melodic-bionic/>`_ for your platform (32 bit - i386, 64 bit - amd64).
+1.  Download the appropriate `Melodic Husky ISO image <https://packages.clearpathrobotics.com/stable/images/latest/melodic-bionic/>`_.
 
 2. Copy the image to a USB drive using unetbootin, rufus, balena etcher, or a similar program. For example:
 
