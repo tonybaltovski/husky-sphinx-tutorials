@@ -9,13 +9,13 @@ Installing Husky Software
 Clearpath provides a lightly customized installation image of Ubuntu 16.04 "Xenial" which automatically pulls in all necessary dependencies for Husky software.
 
 
-1.  Download the appropriate `Kinetic Husky ISO image <https://packages.clearpathrobotics.com/stable/images/latest/kinetic-husky/>`_ for your platform (32 bit - i386, 64 bit - amd64).
+1.  Download the appropriate `Kinetic Husky ISO image <https://packages.clearpathrobotics.com/stable/images/latest/kinetic-xenial/>`_.
 
 2. Copy the image to a USB drive using unetbootin:
 
 .. code:: bash
 
-   sudo unetbootin isofile="kinetic-husky-amd64-latest.iso"
+   sudo unetbootin isofile="clearpath-universal-kinetic-amd64-0.5.4.iso"
 
 3.  Connect your robot PC to wired internet access, a keyboard, and a monitor. Make sure that the PC is connected to shore power, or the Husky battery is either fully charged.
 
