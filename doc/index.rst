@@ -19,6 +19,7 @@ For more information or to receive a quote, please `visit us online <http://clea
 
     BackUpHusky
     InstallHuskySoftware
+    HuskyNetwork
     CustomizeHuskyConfig
 
 .. toctree::
