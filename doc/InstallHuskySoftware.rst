@@ -24,10 +24,8 @@ Clearpath provides a lightly customized installation image of Ubuntu 20.04 "Foca
 4.  Boot your robot PC from the USB drive, and let installer work its magic.  If asked for a partitioning method choose ``Guided - use entire disk and set up LVM``.
 5.  The setup process will be automated, and may take a long time depending on the speed of your internet connection.
 6.  Once the setup process is complete, the PC will turn off. Please unplug the USB drive and turn the PC back on.
-7.  On first boot, the username will be administrator and the password will be clearpath.
-8.  Please follow the configuration instructions on the screen. If the computer reboots, wait for the PC to boot to the login screen, and re-enter the login credentials.
-9.  Once the computer configuration is complete, you may use passwd utility to change administrator account password.
-10. To setup a factory-standard Husky robot, ensure all your peripherals are plugged in, and run the following command:
+7.  On first boot, the username will be administrator and the password will be clearpath. You may use ``passwd`` utility to change administrator account password.
+8. To setup a factory-standard Husky robot, ensure all your peripherals are plugged in, and run the following command:
 
 .. code:: bash
 
@@ -48,7 +46,7 @@ Testing base configuration
 
 .. code:: bash
 
-   sudo tail /var/log/upstart/ros.log -n 30
+   sudo journalctl -u ros
 
 3.  Your husky should now be accepting commands from your joystick. The service will automatically start each time you boot your Husky's PC.
 
