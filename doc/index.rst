@@ -1,55 +1,33 @@
 Husky UGV Tutorials
-=====================
-
+====================
 
 .. image:: images/TJM_5949_00001.jpg
 
-
-Husky is a rugged, outdoor-ready unmanned ground vehicle (UGV), suitable for research and rapid prototyping applications. Husky fully supports ROS—all of the packages are available in the `Husky github org <https://github.com/husky>`_.
+Husky is a rugged, outdoor-ready unmanned ground vehicle (UGV), suitable for research and rapid prototyping applications. Husky fully supports ROS2 Foxy—all of the packages are available in the `Husky GitHub org <https://github.com/husky>`_.
 
 For more information or to receive a quote, please `visit us online <http://clearpathrobotics.com/husky>`_.
 
 .. Warning::
-  These tutorials assume that you are comfortable working with ROS.  We recommend starting with our
-  `ROS tutorial <./../ros>`_ if you are not familiar with ROS already.
+  These tutorials assume that you are comfortable working with `ROS2 <https://docs.ros.org/en/foxy/index.html>`_.
 
 .. toctree::
     :maxdepth: 0
-    :caption: Installation
+    :caption: Husky Introduction
 
-    BackUpHusky
-    InstallHuskySoftware
+    Introduction <self>
+    HuskyOverview
+
+.. toctree::
+    :maxdepth: 0
+    :caption: Setting Up Husky
+
+    HuskyInstallSoftware
     HuskyNetwork
-    CustomizeHuskyConfig
+    HuskyControllerPairing
 
 .. toctree::
     :maxdepth: 0
     :caption: Using Husky
 
-    SimulatingHusky
-    InterfacingWithHusky
-    DrivingHusky
-
-.. toctree::
-    :maxdepth: 0
-    :caption: Demo Applications: Navigation
-
-    HuskyMove
-    HuskyAMCL
-    HuskyGmapping
-    HuskyFrontiers
-
-.. toctree::
-    :maxdepth: 0
-    :caption: NVIDIA Jetson
-
-    jetson_tx2
-    jetson_nano
-    jetson_xavier
-
-.. toctree::
-    :maxdepth: 0
-    :caption: Package Components
-
-    HuskyPackages
-    additional_sim_worlds
+    HuskyDriving
+    HuskySimulation
