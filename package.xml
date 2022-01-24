@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <package>
   <name>husky_tutorials</name>
-  <version>0.6.1</version>
+  <version>1.0.0</version>
   <description>Husky's tutorials.</description>
   <maintainer email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</maintainer>
+  <maintainer email="jyang@clearpathrobotics.com">Joey Yang</maintainer>
 
   <license>BSD</license>
 
