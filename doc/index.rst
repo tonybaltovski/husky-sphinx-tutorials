@@ -21,6 +21,7 @@ For more information or to receive a quote, please `visit us online <http://clea
     :maxdepth: 0
     :caption: Setting Up Husky
 
+    ROSUpgrade
     HuskyInstallSoftware
     HuskyNetwork
     HuskyControllerPairing
