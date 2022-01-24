@@ -7,7 +7,7 @@ Installing Husky Software
 
 .. note::
 
-  If you wish to install the Husky packages on your computer (i.e. to interface with the physical Husky robot and/or to simulate Husky), then proceed with the following instructions below. A prequisite is to make sure you have a `working ROS2 Foxy installation <https://docs.ros.org/en/foxy/Installation.html>`_ set up on your computer.
+  If you wish to install the Husky packages on your computer (e.g. to interface with the physical Husky robot and/or to simulate Husky), then proceed with the following instructions below. A prequisite is to make sure you have a working ROS2 Foxy installation set up on your computer.
 
 Add Clearpath Debian Package Repository
 ----------------------------------------

@@ -121,4 +121,4 @@ It is useful to connect your computer to the same ROS2 network as the Husky, par
     export ROS_DOMAIN_ID=<HUSKY_ROS_DOMAIN_ID>
     source /opt/ros/foxy/setup.bash
 
-You should now be able to access Husky's ROS2 data (i.e. topics, services, and actions) from your computer.
+You should now be able to access Husky's ROS2 data (e.g. topics, services, and actions) from your computer.
