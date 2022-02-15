@@ -15,12 +15,19 @@ This package supplies Sphinx-based tutorial content to assist you with setting u
 
 :doc:`Driving <HuskyDriving>` covers how to teleoperate Husky using the remote control, a well as safety procedures for operating the real robot. Anyone working with a physical robot should be familiar with this section.
 
+The remainder of the subjects are more applicable to the real robot, and have to do with configuring, using, and maintaining the platform. If you are a lab administrator rather than direct platform user, you may wish to skip the introductory chapters and jump straight to these ones.
+
 .. toctree::
     :maxdepth: 0
     :caption: Husky Overview
 
     Introduction <self>
-    HuskyPackages
+
+.. toctree::
+    :maxdepth: 0
+    :caption: Husky Packages
+
+    HuskyCommonPackages
 
 .. toctree::
     :maxdepth: 0
