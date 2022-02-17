@@ -1,23 +1,27 @@
 Driving Husky
 ==============
 
-There are two ways to drive the Husky: teleoperation using a joystick controller, or by manually publishing ROS2 messages. Both methods will work on a physical Husky robot as well as on a simulated Husky.
+There are four ways to drive Husky, and each way will work on a physical Husky robot as well as on a simulated Husky.
 
-There is also a third way of driving the Husky: through autonomous navigation. This will be covered in this tutorial in the future!
+The first two ways are teleoperation using a remote controller, and manually through publishing ROS2 messages. These two ways are covered in this section.
+
+The third way is using the interactive controller in ``rviz``. This is covered in the :doc:`Simulation <Simulating>` section.
+
+The fourth way is through autonomous navigation. This will be covered in this tutorial in the future!
 
 Safety Precautions
 -------------------
 
-.. warning::
+.. Warning::
 
-	Husky is a heavy, robot capable of reaching high speeds. Careless driving can cause harm to the operator, bystanders, the robot, or other property. Always remain vigilant, ensure you have a clear line of sight to the robot, and operate the robot at safe speeds. We strongly recommend driving in normal (slow) mode first, and only enabling turbo in large, open areas that are free of people and obstacles.
+	Husky is capable of reaching high speeds. Careless driving can cause harm to the operator, bystanders, the robot, or other property. Always remain vigilant, ensure you have a clear line of sight to the robot, and operate the robot at safe speeds. We strongly recommend driving in normal (slow) mode first, and only enabling turbo in large, open areas that are free of people and obstacles.
 
-Teleoperation
---------------
+Driving with Remote Controller
+---------------------------------
 
 .. note::
 
-	For instructions on controller pairing, see :doc:`Joystick Controller Pairing <HuskyControllerPairing>`.
+	For instructions on controller pairing, see :doc:`Remote Controller Pairing <HuskyControllerPairing>`.
 
 Before driving Husky via teleoperation, you first need to launch the Husky ROS2 teleoperation launch file in the ``husky_control`` package. In terminal, run:
 
@@ -25,25 +29,25 @@ Before driving Husky via teleoperation, you first need to launch the Husky ROS2 
 
   ros2 launch husky_control teleop_launch.py
 
-Once launched, you can now drive Husky with the paired joystick controller.
+Once launched, you can now drive Husky with the paired remote controller.
 
 To drive the Husky, Axis 0 controls the robot's steering, Axis 1 controls the forward/backward velocity, and Buttons 4 and 5 act as enable & enable-turbo respectively. On common controllers, these correspond to the following physical controls:
 
-============= ==================================== ===== ===== =========
-Axis/Button   Physical Input                       PS4   F710  Xbox One
-============= ==================================== ===== ===== =========
-Axis 0        Left thumb stick horizontal          LJ    LJ    LJ
-Axis 1        Left thumb stick vertical            LJ    LJ    LJ
-Button 4      Left shoulder button or trigger      L1    LB    LB
-Button 5      Right shoulder button or trigger     R1    RB    RB
-============= ==================================== ===== ===== =========
+============= ==================================== ===== ===== ========= =======================
+Axis/Button   Physical Input                       PS4   F710  Xbox One  Action
+============= ==================================== ===== ===== ========= =======================
+Axis 0        Left thumb stick horizontal          LJ    LJ    LJ        Drive forward/backward
+Axis 1        Left thumb stick vertical            LJ    LJ    LJ        Rotate
+Button 4      Left shoulder button or trigger      L1    LB    LB        Enable normal speed
+Button 5      Right shoulder button or trigger     R1    RB    RB        Enable turbo
+============= ==================================== ===== ===== ========= =======================
 
 You must hold either Button 4 or Button 5 at all times while driving the robot.
 
 Publishing ROS2 Messages
 -------------------------
 
-By default, Husky's velocity controller exposes the ROS2 topic ``/husky_velocity_controller/cmd_vel_unstamped``. You can manually publish ``geometry_msgs/msg/Twist`` messages to this topic to drive the Husky. 
+You can manually publish ``geometry_msgs/msg/Twist`` ROS2 messages to either the ``/husky_velocity_controller/cmd_vel_unstamped`` or the ``/cmd_vel`` ROS2 topics to drive Husky. 
 
 For example, in terminal, run:
 
@@ -51,4 +55,11 @@ For example, in terminal, run:
 
 	ros2 topic pub --once /husky_velocity_controller/cmd_vel_unstamped geometry_msgs/msg/Twist '{linear: {x: 0.5, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}'
 
-The command above makes Husky drive forward at 0.5 m/s without any rotation. 
+The command above makes Husky drive forward momentarily at 0.5 m/s without any rotation. 
+
+Emergency Stop
+---------------
+
+Husky has an E-Stop button on its rear. Pressing it will cut power to the motors. To disengage the E-Stop, simply twist the button in the direction indicated by the arrows.
+
+Whenever you need to perform maintenance on Husky, we recommend engaging the E-Stop if the robot cannot be fully powered down.
