@@ -23,13 +23,7 @@ Driving with Remote Controller
 
 	For instructions on controller pairing, see :doc:`Remote Controller Pairing <HuskyControllerPairing>`.
 
-Before driving Husky via teleoperation, you first need to launch the Husky ROS2 teleoperation launch file in the ``husky_control`` package. In terminal, run:
-
-.. code-block:: bash
-
-  ros2 launch husky_control teleop_launch.py
-
-Once launched, you can now drive Husky with the paired remote controller.
+Teleoperation is launched via the base launch which allows you to drive Husky with the paired remote controller.
 
 To drive the Husky, Axis 0 controls the robot's steering, Axis 1 controls the forward/backward velocity, and Buttons 4 and 5 act as enable & enable-turbo respectively. On common controllers, these correspond to the following physical controls:
 
