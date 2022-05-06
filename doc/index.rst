@@ -9,7 +9,7 @@ This package supplies Sphinx-based tutorial content to assist you with setting u
 .. _Husky: https://clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/
 
 .. Warning::
-  These tutorials assume that you are comfortable working with `ROS2 <https://docs.ros.org/en/foxy/index.html>`_.
+  These tutorials assume that you are comfortable working with `ROS2 <https://docs.ros.org/en/foxy/index.html>`_.  Also, the accessory support for ROS2 is not the same as ROS1.  Contact support if you are not confident prior to upgrading at support@clearpathrobotics.com.
 
 :doc:`Simulation <HuskySimulation>` is a logical place for most users to start, as this is universally applicable; understanding how to effectively operate Husky in simulation is valuable whether you are in the testing phase with software you intend to ultimately deploy on a real Husky, or you do not have one and are simply exploring the platform's capabilities.
 
