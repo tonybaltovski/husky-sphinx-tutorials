@@ -52,6 +52,13 @@ For more information or to receive a quote, please `visit us online <http://clea
     jetson_xavier
 
 .. toctree::
+    :titlesonly:
+    :hidden:
+    :caption: Testing Husky
+
+    HuskyTests
+
+.. toctree::
     :maxdepth: 0
     :caption: Package Components
 
