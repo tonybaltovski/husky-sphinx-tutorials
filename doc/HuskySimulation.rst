@@ -11,7 +11,7 @@ approximations of its dynamics, including wheel slippage, skidding, and inertia.
 
 .. code-block:: bash
 
-    ros2 launch husky_gazebo husky_playpen_launch.py
+    ros2 launch husky_gazebo husky_playpen.launch.py
 
 You should see the following window appear, or something like it. You can adjust the camera angle by clicking and dragging while holding CTRL, ALT, or the shift key:
 
