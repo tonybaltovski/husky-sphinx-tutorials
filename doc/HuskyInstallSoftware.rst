@@ -88,3 +88,9 @@ Husky packages are available on GitHub_, and can be compiled and installed from 
 .. code-block:: bash
 
     source install/setup.bash
+
+6. If you would like ROS to run on boot run:
+
+.. code-block:: bash
+
+    ros2 run husky_bringup install
