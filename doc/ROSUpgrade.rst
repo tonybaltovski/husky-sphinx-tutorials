@@ -30,6 +30,10 @@ On the computer to be upgraded to Ubuntu 20.04:
 
 5. Once the computer turns off, remove the USB drive and turn on the computer. It will now be running your fresh install of Ubuntu 20.04.
 
+Removing ROS1 Noetic
+--------------------
+If ROS1 Noetic was previous installed and there is a systemd job to start it on boot, it must be disabled to use ROS2 on boot.  This can be done by running `source /opt/ros/noetic/setup.bash; rosrun robot_upstart uninstall ros`.
+
 Installing ROS2 Foxy
 ---------------------
 
