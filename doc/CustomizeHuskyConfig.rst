@@ -105,7 +105,7 @@ Husky's standard peripherals can be configured using these environment variables
 	  <td><p>  ROS topic the Velodyne VLP-16 data publishes to </p></td>
 	</tr>
 	<tr>  <td><span  id="line-48"></span><p> <tt>HUSKY_MAG_CONFIG</tt> </p></td>
-	  <td><p> <tt>$(find husky_bringup)/config/mag_config_default.yaml</tt> </p></td>
+	  <td><p> <tt>$(find husky_bringup)/config<br/>/mag_config_default.yaml</tt> </p></td>
 	  <td><p>  Path to the Husky's compass calibration configuration file </p></td>
 	</tr>
 	<tr>  <td><span  id="line-46"></span><p> <tt>HUSKY_REALSENSE_ENABLED</tt> </p></td>
