@@ -20,7 +20,7 @@ Instructions
 
 	.. code:: bash
 
-		roslaunch husky_gazebo husky_playpen.launch
+		export HUSKY_LMS1XX_ENABLED=1;  roslaunch husky_gazebo husky_playpen.launch
 
 	ii. Start the Clearpath-configured rviz visualizer:
 
