@@ -1,5 +1,12 @@
 # Tutorial for Husky
 
+---
+
+**Note:**
+These tutorials have been superceded. Find the latest Husky tutorials at [docs.clearpathrobotics.com](https://docs.clearpathrobotics.com/docs/robots/husky/husky).
+
+---
+
 ## Setup
     sudo apt-get install texlive-full texlive-xetex texmaker python-pip latexmk
     pip install sphinx
