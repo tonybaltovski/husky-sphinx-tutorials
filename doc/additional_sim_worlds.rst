@@ -3,7 +3,7 @@ Additional Simulation Worlds
 
 In addtion to the default ``husky_playpen.launch`` file, ``husky_gazebo`` contains two additional launch files of use:
 
-* ``husky_empty_world.launch``, which spawns Husky in a featureless, infinite plane; and
+* ``empty_world.launch``, which spawns Husky in a featureless, infinite plane; and
 * ``spawn_husky.launch``, which is intended to be included in any custom world to add a Husky simulation to it.
 
 To add a Husky to any of your own worlds, simply include the ``spawn_husky.launch`` file in your own world's launch:

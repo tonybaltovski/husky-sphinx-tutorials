@@ -17,7 +17,7 @@ Running a Virtual Husky
 Open a terminal window, and enter:
 
 .. parsed-literal::
-	roslaunch husky_gazebo husky_empty_world.launch
+	roslaunch husky_gazebo empty_world.launch
 
 Open another terminal window, and enter:
 

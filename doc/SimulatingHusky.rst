@@ -17,7 +17,7 @@ i.  Simulate Husky in an empty world. You can add new objects to this world usin
 
 .. code:: bash
 
-	roslaunch husky_gazebo husky_empty_world.launch
+	roslaunch husky_gazebo empty_world.launch
 
 ii.  Simulate Husky in a Clearpath designed world. This is the base environment for the navigation tutorials. It will take some time to start, as the simulator will need to download resources from the Gazebo servers.
 
