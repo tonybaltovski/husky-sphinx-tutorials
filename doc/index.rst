@@ -1,6 +1,9 @@
 Husky UGV Tutorials
 =====================
 
+.. Warning::
+
+  These tutorials have been superceded. Find the latest Husky tutorials at `docs.clearpathrobotics.com <https://docs.clearpathrobotics.com/docs/robots/husky/tutorials_husky>`_.
 
 .. image:: images/TJM_5949_00001.jpg
 
