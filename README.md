@@ -2,8 +2,7 @@
 
 ---
 
-**Note:**
-These tutorials have been superceded. Find the latest Husky tutorials at [docs.clearpathrobotics.com](https://docs.clearpathrobotics.com/docs/robots/husky/tutorials_husky).
+# **Note:** These tutorials have been superceded. Find the latest Husky tutorials at [docs.clearpathrobotics.com](https://docs.clearpathrobotics.com/docs/outdoor_robots/husky/tutorials_husky).
 
 ---
 
